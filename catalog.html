@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Мишка</title>
+  </head>
+  <body>
+    <header class = 'page-header'>
+
+      <h1 class = 'page-header__title'>Мишка</h1><!--скрыт! -->
+
+      <div class = 'page-header__logo'>
+        <img src = 'http://placehold.it/150x100' alt = 'Мишка'>
+      </div>
+
+      <nav class = 'main-navigation'>
+
+        <span class = 'main-navigation__toggler'><span></span></span>
+        <div class = 'main-navigation__wrapper'>
+
+          <ul class = 'main-navigation__list'>
+            <li class = 'main-navigation__item'><a href = '#'>Каталог товара</a></li>
+            <li class = 'main-navigation__item'><a href = '#'>Вязание на заказ</a></li>
+            <li class = 'main-navigation__item'><a href = '#'>Поиск по сайту</a></li>
+            <li class = 'main-navigation__item'><a href = '#'>Корзина: пока пуста</a></li>
+          </ul>
+
+        </div>
+      </nav>
+    </header>
+    <main class = 'page-main'>
+      <section class = 'catalog'>
+        <div class = 'catalog__wrapper'>
+          <h2 class = 'catalog__title'>Каталог товаров</h2>
+        </div>
+      </section>
+      <div class = 'all-items'>
+        <section class = 'all-items__descr item'>
+
+          <a class = 'item__img item__img--rabbit' href = '#'><img src="http://placehold.it/150x100"></a>
+
+          <a class = 'item__title' href  = '#'>Зайчик-попрыгайчик</a>
+          <p class = 'item__descr'> Рост 30 см, вес 200 г</p>
+
+          <span class = 'item__price'> 1200 руб.</span>
+          <button type = 'button' class = 'btn-basket'></button>
+
+        </section>
+
+        <section class = 'all-items__descr item'>
+
+          <a class = 'item__img item__img--basket' href = '#'><img src="http://placehold.it/150x100"></a>
+
+          <a class = 'item__title' href  = '#'>Корзинка для белья</a>
+          <p class = 'item__descr'> Диаметр 15 см, высота 10 см</p>
+
+          <span class = 'item__price'> 690 руб.</span>
+          <button type = 'button' class = 'btn-basket'></button>
+
+        </section>
+
+        <section class = 'all-items__descr item'>
+
+          <a class = 'item__img item__img--toys' href = '#'><img src="http://placehold.it/150x100"></a>
+
+          <a class = 'item__title item__title--toys' href  = '#'>Большая корзинка для игрушек</a>
+          <p class = 'item__descr'> Диаметр 30 см, высота 30 см</p>
+
+          <span class = 'item__price'> 1 500 руб.</span>
+          <button type = 'button' class = 'btn-basket'></button>
+
+        </section>
+      </div>
+
+      <section class = 'production'>
+
+          <div class = 'production__img'>Камера</div><!--скрыто-->
+          <h3 class = 'production__title'>Процесс производства</h3>
+
+
+        <div class = 'production__video'></div>
+
+        <p class = 'production__descr'> По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
+
+        <a class = 'production__make-order btn btn--order'>Сделать заказ</a>
+
+      </section>
+    </main>
+
+    <footer class = 'page-footer'>
+      <section class = 'page-footer__social-links'>
+        <a class = 'page-footer__link page-footer__link--in' href = '#'>Мы в инстаграмме</a>
+        <a class = 'page-footer__link page-footer__link--fb' href = '#'>Мы в фейсбуке</a>
+        <a class = 'page-footer__link page-footer__link--tw' href = '#'>Мы в Твитерре</a>
+      </section>
+      <section class = 'page-footer__copyright'>
+        <span class = 'page-footer__text'>Разработано</span>
+        <a class = 'page-footer__inner-link' href = '#'></a>
+      </section>
+    </footer>
+  </body>
+</html>
