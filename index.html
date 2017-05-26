@@ -5,8 +5,63 @@
     <title>HTML Academy: Мишка</title>
   </head>
   <body>
+    <header class = 'page-header'>
 
-    <p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">Продвинутый HTML и CSS</a>».</p>
+      <h1 class = 'page-header__title'>Мишка</h1><!--скрыт! -->
 
+      <div class = 'page-header__logo'>
+        <img src = 'http://placehold.it/150x100' alt = 'Мишка'>
+      </div>
+
+      <nav class = 'main-navigation'>
+
+        <span class = 'main-navigation__toggler'><span></span></span>
+        <div class = 'main-navigation__wrapper'>
+
+          <ul class = 'main-navigation__list'>
+            <li class = 'main-navigation__item'><a href = '#'>Каталог товара</a></li>
+            <li class = 'main-navigation__item'><a href = '#'>Вязание на заказ</a></li>
+            <li class = 'main-navigation__item'><a href = '#'>Поиск по сайту</a></li>
+            <li class = 'main-navigation__item'><a href = '#'>Корзина: пока пуста</a></li>
+          </ul>
+
+        </div>
+      </nav>
+    </header>
+
+    <main class = 'page-main'>
+      <section class = 'main-descr'>
+
+        <div class = 'main-descr__logo'>
+          <h2 class = 'main-descr__title'> Милые штуки ручной работы для дома</h2>
+          <img src = 'http://placehold.it/150x100' alt = 'Милые штуки ручной работы для дома'>
+        </div>
+
+        <a class = 'main-discr__interior-item'>Предметы интерьера</a>
+        <a class = 'main-discr__toys-item'>Детские игрушки</a>
+
+      </section>
+      <section class = 'advantages'>
+        <h3 class = 'advantages__title'>Вязаные корзинки</h3>
+        <span class = 'advantages__week'>Товар недели</span>
+
+        <p class = 'advantages__descr'>Экологически чистая пряжа,ручная работы. Доступны в шести расцветках, и трех размерах.</p>
+
+        <table class = 'advantages__item table-item '>
+          <tr class = 'table-item__color'>
+            <td>Цвет</td>
+            <td>"Тиффани"/серый</td>
+          </tr>
+          <tr class = 'table-item__diameter' >
+            <td>Диаметр:</td>
+            <td>25 см</td>
+          </tr>
+          <tr class = 'table-item__height'>
+            <td>Высота:</td>
+            <td>15 см</td>
+          </tr>
+        </table>
+      </section>
+    </main>
   </body>
 </html>
