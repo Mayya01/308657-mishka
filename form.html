@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>Каталог</title>
+  </head>
+  <body>
+    <header class = 'page-header'>
+
+      <h1 class = 'page-header__title'>Мишка</h1><!--скрыт! -->
+
+      <div class = 'page-header__logo'>
+        <img src = 'http://placehold.it/150x100' alt = 'Мишка'>
+      </div>
+
+      <nav class = 'main-navigation'>
+
+        <span class = 'main-navigation__toggler'><span></span></span>
+        <div class = 'main-navigation__wrapper'>
+
+          <ul class = 'main-navigation__list'>
+            <li class = 'main-navigation__item'><a href = '#'>Каталог товара</a></li>
+            <li class = 'main-navigation__item'><a href = '#'>Вязание на заказ</a></li>
+            <li class = 'main-navigation__item'><a href = '#'>Поиск по сайту</a></li>
+            <li class = 'main-navigation__item'><a href = '#'>Корзина: пока пуста</a></li>
+          </ul>
+
+        </div>
+      </nav>
+    </header>
+
+    <main class = 'page-main'>
+      <section class = 'order'>
+
+        <div class = 'order__wrapper'>
+          <h2 class = 'order__title'>Вязание на заказ</h2>
+        </div>
+
+      </section>
+
+      <section class = 'options'>
+        <p class = 'options__descr'>Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали</p>
+
+        <span class = 'options__type'>Тип</span>
+
+        <form class = 'options__radio type' action=https://echo.htmlacademy.ru/ method='get'>
+
+          <input type = 'radio' name = 'accessories' id = 'accessories'>
+          <label for = 'accessories' class = 'type--accessories'>Аксессуары для интерьера</label>
+
+          <input type = 'radio' name = 'toy' id = 'toy'>
+          <label for = 'toy' class = 'type--toy'>Детская игрушка</label>
+
+
+        </form>
+
+         <span class = 'options__color'>Цвет</span>
+
+        <form class = 'options__checkbox color' action=https://echo.htmlacademy.ru/ method='get'>
+
+          <input type = 'checkbox'  name = 'white' id = 'white-color' checked>
+          <label for = 'white-color' class = 'color__all'>Белый</label>
+
+          <input type = 'checkbox'  name = 'gray' id = 'gray-color' checked>
+          <label for = 'gray-color' class = 'color__all'>Серый</label>
+
+          <input type = 'checkbox'  name = 'gray' id = 'tiffany-color'>
+          <label for = 'tiffany-color' class = 'color__all'>'Тиффани'</label>
+
+          <input type = 'checkbox'  name = 'black' id = 'black-color'>
+          <label for = 'black-color' class = 'color__all'>Черный</label>
+
+          <input type = 'checkbox'  name = 'pink' id = 'pink-color'>
+          <label for = 'pink-color' class = 'color__all'>Розовый</label>
+
+          <input type = 'checkbox'  name = 'orange' id = 'orange-color'>
+          <label for = 'orange-color' class = 'color__all'>Оранжевый</label>
+
+        </form>
+
+        <span class = 'options__name'>Фио</span>
+
+        <form class = 'options__text-input name-detail' action=https://echo.htmlacademy.ru/ method='get'>
+
+          <label for = 'name'  class = 'name-detail__text'>Имя:</label>
+          <input type = 'text' id = 'name' name = 'your-name' placeholder = 'Введите ваше имя' required>
+
+          <label for = 'surname' class = 'name-detail__text'>Фамилия:</label>
+          <input id = 'surname' name = 'your-surname' placeholder= 'Укажите фамилию' required>
+
+          <label for = 'patronymic' class = 'name-detail__text' > Отчество:</label>
+          <input id = 'patronymic' placeholder= 'Отчество,если желаете' name = 'your-patronymic'>
+
+        </form>
+
+        <span class = 'options__tel'>тел</span>
+
+        <form class = 'options__tel-input tel-detail' action=https://echo.htmlacademy.ru/ method='get'>
+
+          <input type = 'tel' name  = 'tel' pattern= '+7 [0-9]{3} [0-9]{2} [0-9]{2}' class = 'tel-detail__img' required>
+
+        </form>
+
+        <form class = 'options__email-input email-detail' action=https://echo.htmlacademy.ru/ method='get'>
+
+          <input type = 'email' name  = 'email' placeholder = 'Ваш Email' class = 'email-detail__img' required>
+
+        </form>
+
+        <span class = 'options__more'>Доп</span>
+
+        <form class = 'options__texarea-input more-detail' action=https://echo.htmlacademy.ru/ method='get'>
+
+         <input type = 'textarea' name = 'your-wishes' placeholder= 'Опишите все ваши пожелания к заказу'>
+
+        </form>
+
+        <span class = 'options__required'><sup>*</sup>Поля обязательны для заполнения</span>
+
+        <a class = 'options__order btn' href = '#'>Отправить заказ</a>
+
+
+      </section>
+
+    </main>
+
+    <footer class = 'page-footer'>
+      <section class = 'page-footer__social-links'>
+        <a class = 'page-footer__link page-footer__link--in' href = '#'>Мы в инстаграмме</a>
+        <a class = 'page-footer__link page-footer__link--fb' href = '#'>Мы в фейсбуке</a>
+        <a class = 'page-footer__link page-footer__link--tw' href = '#'>Мы в Твитерре</a>
+      </section>
+      <section class = 'page-footer__copyright'>
+        <span class = 'page-footer__text'>Разработано</span>
+        <a class = 'page-footer__inner-link' href = '#'></a>
+      </section>
+    </footer>
+  </body>
+</html>
