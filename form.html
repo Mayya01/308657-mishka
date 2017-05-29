@@ -19,7 +19,7 @@
         </div>
 
         <nav class='main-navigation'>
-            <button class='main-navigation__toggler'><span></span>
+            <button type='button' class='main-navigation__toggler'><span></span>
             </button>
             <ul class='main-navigation__list'>
                 <li class='main-navigation__item'><a href='#'>Каталог товара</a>
@@ -40,15 +40,16 @@
         <section class='title'>
             <h1 class='title__order'>Вязание на заказ</h1>
         </section>
-        
+
         <section class='order'>
-            <form class='order-form order-form--wrapper' action=https://echo.htmlacademy.ru/ method='get'>
+           <div class='order__wrapper'>
+            <form class='order-form' action=https://echo.htmlacademy.ru/ method='get'>
                 <p class='order-form__descr'>Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали</p>
                 <div class='order-form__section'>
                     <span class='order-form__section-title'>Тип</span>
                     <input type='radio' name='type' id='accessories' class='order-form__radio'>
                     <label for='accessories' class='order-form__radio-label'>Аксессуары для интерьера</label>
-                    
+
                     <input type='radio' name='type' id='toy' class='order-form__radio'>
                     <label for='toy' class='order-form__radio-label'>Детская игрушка</label>
                 </div>
@@ -67,10 +68,10 @@
 
                     <input type='checkbox' name='black' id='black-color' class='order-form__checkbox'>
                     <label for='black-color' class='order-form__checkbox-label'>Черный</label>
-                    
+
                     <input type='checkbox' name='pink' id='pink-color' class='order-form__checkbox'>
                     <label for='pink-color' class='order-form__checkbox-label'>Розовый</label>
-                    
+
                     <input type='checkbox' name='orange' id='orange-color' class='order-form__checkbox'>
                     <label for='orange-color' class='order-form__checkbox-label'>Оранжевый</label>
                 </div>
@@ -105,12 +106,12 @@
 
                     <textarea name='your-wishes' class='order-form__textarea' cols='20' rows='10'> Опишите все ваши пожелания к заказу</textarea>
                 </div>
-                <p class='order-form __field-required'><sup>*</sup>Поля обязательны для заполнения</p>
+                <p class='order-form__field-required'><sup>*</sup>Поля обязательны для заполнения</p>
 
-                <button type='button' class='order-form__btn  btn' href='#'>Отправить заказ</button>
+                <button  class='order-form__btn  btn' href='#'>Отправить заказ</button>
 
             </form>
-
+          </div>
         </section>
 
     </main>
