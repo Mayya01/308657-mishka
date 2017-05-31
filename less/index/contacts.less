@@ -1,0 +1,27 @@
+.contacts {
+  .contacts__title {
+    .wrapper();
+  }
+  width: @mainMobileWidth;
+  .contacts__row {
+    .wrapper();
+    display: flex;
+    justify-content: space-between;
+    .contacts__text, .contacts__adress {
+      margin: 0;
+    }
+    .contacts__adress--link {
+      text-decoration: none;
+      border-bottom: 1px solid @colorGreen;
+      color:@mainColor;
+      display: block;
+    }
+    .contacts__adress--link, .contacts__text, .contacts__adress {
+      padding-top: 35px;
+    }
+    .contacts__text {
+    padding-right: 30px;
+    }
+  }
+}
+
