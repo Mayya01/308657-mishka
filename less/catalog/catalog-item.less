@@ -1,0 +1,31 @@
+.catalog-item {
+    width: @mainMobileWidth;
+    .catalog-item__img-title-wrapper {
+        .wrapper();
+        .catalog-item__title {
+            margin: 0;
+        }
+        .catalog-item__title a {
+            font-size: @fontSizeBtn;
+            line-height: @lineHeightLink;
+            font-weight: bold;
+            text-decoration: none;
+            color: @mainColor;
+        }
+    }
+    .catalog-item__price-btn-wrapper {
+        .wrapper();
+        position: relative;
+        min-height: 73px;
+        padding-top: 25px;
+        .btn-basket {
+            position: absolute;
+            top: 25px;
+            left: 185px;
+            display: block;
+            width: 21px;
+            height: 19px;
+            background-image: url(../img/icon-cart.svg);
+        }
+    }
+}
