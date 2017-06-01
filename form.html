@@ -15,7 +15,7 @@
         <!--скрыт! -->
 
         <div class='page-header__logo'>
-            <a class='page-header__link' href='index.html'><img src='http://placehold.it/150x100' alt='Мишка'>
+            <a class='page-header__link' href='index.html'><img src='img/logo-mobile.svg' alt='Мишка' width='86' height='35'>
             </a>
         </div>
 
@@ -36,7 +36,6 @@
 
     </header>
 
-    <main class='page-main'>
 
         <section class='title'>
             <h1 class='title__order'>Вязание на заказ</h1>
@@ -47,7 +46,7 @@
             <form class='order-form' action=https://echo.htmlacademy.ru/ method='get'>
                 <p class='order-form__descr'>Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали</p>
                 <div class='order-form__section'>
-                    <span class='order-form__section-title'>Тип</span>
+                    <p class='order-form__section-title'>Тип</p>
                     <input type='radio' name='type' id='accessories' class='order-form__radio'>
                     <label for='accessories' class='order-form__radio-label'>Аксессуары для интерьера</label>
 
@@ -56,7 +55,7 @@
                 </div>
 
                 <div class='order-form__section'>
-                    <span class='order-form__section-title'>Цвет</span>
+                    <p class='order-form__section-title'>Цвет</p>
 
                     <input type='checkbox' name='white' id='white-color' class='order-form__checkbox' checked>
                     <label for='white-color' class='order-form__checkbox-label'>Белый</label>
@@ -79,31 +78,31 @@
 
                 <div class='order-form__section'>
 
-                    <span class='order-form__section-title'>Фио</span>
+                    <p class='order-form__section-title'>Фио</p>
 
                     <label for='name' class='order-form__text-label'>Имя:</label>
-                    <input type='text' id='name' name='your-name' placeholder='Введите ваше имя' class='order-form__text' required>
+                    <input type='text' id='name' name='your-name' value='Введите ваше имя' class='order-form__text' required>
 
                     <label for='surname' class='order-form__text-label'>Фамилия:</label>
-                    <input id='surname' name='your-surname' placeholder='Укажите фамилию' class='order-form__text' required>
+                    <input id='surname' name='your-surname' value='Укажите фамилию' class='order-form__text' required>
 
                     <label for='patronymic' class='order-form__text-label'> Отчество:</label>
-                    <input id='patronymic' placeholder='Отчество,если желаете' name='your-patronymic' class='order-form__text'>
+                    <input id='patronymic' value='Отчество,если желаете' name='your-patronymic' class='order-form__text'>
                 </div>
 
                 <div class='order-form__section'>
 
-                    <span class='order-form__section-title'>тел</span>
+                    <p class='order-form__section-title'>тел</p>
 
-                    <input type='tel' name='tel' class='order-form__tel' required>
+                    <input type='tel' name='tel' class='order-form__tel' required value='+7 XXX XX XX'>
 
-                    <input type='email' name='email' placeholder='Ваш Email' class='order-form__email' required>
+                    <input type='email' name='email' value='Ваш Email' class='order-form__email' required>
 
                 </div>
 
                 <div class='order-form__section'>
 
-                    <span class='order-form__section-title'>Доп</span>
+                    <p class='order-form__section-title'>Доп</p>
 
                     <textarea name='your-wishes' class='order-form__textarea' cols='20' rows='10'> Опишите все ваши пожелания к заказу</textarea>
                 </div>
@@ -114,8 +113,6 @@
             </form>
           </div>
         </section>
-
-    </main>
 
     <footer class='page-footer'>
 
