@@ -1,17 +1,90 @@
-.about-us {
-    width: @mainMobileWidth;
-    .about-us__wrapper {
-        .wrapper();
-        .about-us__title {
-            font-size: @fontSizeCaptionH3;
-        }
-        .about-us__list {
-            list-style: none;
-            padding: 0;
-            .about-us__item {
-                .fontline();
-                font-weight: bold;
-            }
-        }
-    }
+.about-us__wrapper {
+    .wrapper();
+    padding: 0 30px;
+    margin-top: 67px;
+}
+.about-us__title {
+    font-size: @fontSizeCaptionH3;
+    margin: 0;
+}
+.about-us__list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.about-us__item {
+    font-size: 17px;
+    line-height: 20px;
+    font-weight: bold;
+    position: relative;
+    min-height: 125px;
+  padding-top: 80px;
+}
+.about-us__item:nth-child(1){
+  padding-top: 90px;
+}
+
+.about-us__item--flower::before {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 33px;
+    height: 38px;
+    top: 35px;
+    left: 10px;
+    background-image: url(../img/icon-feature-1.svg);
+    background-repeat: no-repeat;
+}
+.about-us__item--money::before {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 47px;
+    height: 27px;
+    top: 27px;
+    background-image: url(../img/icon-feature-3.svg);
+    background-repeat: no-repeat;
+}
+.about-us__item--heart::before {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 34px;
+    height: 27px;
+    top: 30px;
+    left: 10px;
+    background-image: url(../img/icon-feature-5.svg);
+    background-repeat: no-repeat;
+}
+.about-us__item--heand::before {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 35px;
+    height: 34px;
+    top: 30px;
+    left: 10px;
+    background-image: url(../img/icon-feature-2.svg);
+    background-repeat: no-repeat;
+}
+.about-us__item--support::before {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 55px;
+    height: 23px;
+    top: 25px;
+    background-image: url(../img/icon-feature-4.svg);
+    background-repeat: no-repeat;
+}
+.about-us__item--presents::before {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 33px;
+    height: 32px;
+    top: 20px;
+    left: 5px;
+    background-image: url(../img/icon-feature-6.svg);
+    background-repeat: no-repeat;
 }

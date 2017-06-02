@@ -8,3 +8,6 @@
 css/*.css
 node_modules/
 Thumbs.db
+less/*.css
+#ignore css.files in less folder
+less/*.css

@@ -1,32 +1,27 @@
-.catalog-nav {
-    width: @mainMobileWidth;
-    margin-top: -95px;
-    .catalog-nav__item {
-        width: @mainMobileWidth;
-        height: 103px;
-    }
-    .catalog-nav__item:nth-child(1) {
-        background-color: rgb(99, 209, 187);
-        padding: 30px 186px 30px 28px;
-        position: relative;
-    }
-    .catalog-nav__item:nth-child(2) {
-        background-color: rgb(86, 195, 178);
-        padding: 30px 202px 30px 30px;
-    }
-    .catalog-nav__item--interior {
-        background-repeat: no-repeat;
-        background-image: url(../img/icon-interior.svg);
-        background-position: 243px 23px;
-    }
-    .catalog-nav__item--toys {
-        background-repeat: no-repeat;
-        background-image: url(../img/icon-toy.svg);
-        background-position: 243px 23px;
-    }
-    .catalog-nav__link {
-        color: rgb(255, 255, 255);
-        font-size: 19px;
-        line-height: @lineHeightLink;
-    }
+.catalogMixin() {
+  background-repeat: no-repeat;
+  background-position: 235px 23px;
+  text-align: center;
+}
+.catalog-nav__link--interior {
+    .catalogMixin();
+    background-image: url(../img/icon-interior.svg);
+    background-color: rgb(99, 209, 187);
+    padding: 25px 186px 30px 28px;
+}
+.catalog-nav__link--toys {
+    .catalogMixin();
+    background-image: url(../img/icon-toy.svg);
+    background-color: rgb(86, 195, 178);
+    padding:  25px 202px 30px 26px;
+}
+.catalog-nav__link {
+    .wrapper();
+    display: block;
+    font-size: 19px;
+    line-height: @lineHeightLink;
+    min-height: 103px;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    text-decoration: none;
 }
