@@ -47,8 +47,8 @@
                 <p class='order-form__descr'>Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали</p>
                 <div class='order-form__section'>
                     <p class='order-form__section-title'>Тип</p>
-                    <input type='radio' name='type' id='accessories' class='order-form__radio'>
-                    <label for='accessories' class='order-form__radio-label'>Аксессуары для интерьера</label>
+                    <input type='radio' name='type' id='accessories' class='order-form__radio' checked>
+                    <label for='accessories' class='order-form__radio-label'>Аксессуар&nbspдля интерьера</label>
 
                     <input type='radio' name='type' id='toy' class='order-form__radio'>
                     <label for='toy' class='order-form__radio-label'>Детская игрушка</label>
@@ -81,10 +81,10 @@
                     <p class='order-form__section-title'>Фио</p>
 
                     <label for='name' class='order-form__text-label'>Имя:</label>
-                    <input type='text' id='name' name='your-name' value='Введите ваше имя' class='order-form__text' required>
+                    <input type='text' id='name' name='your-name' value='Введите ваше имя*' class='order-form__text' required>
 
                     <label for='surname' class='order-form__text-label'>Фамилия:</label>
-                    <input id='surname' name='your-surname' value='Укажите фамилию' class='order-form__text' required>
+                    <input id='surname' name='your-surname' value='Укажите фамилию*' class='order-form__text' required>
 
                     <label for='patronymic' class='order-form__text-label'> Отчество:</label>
                     <input id='patronymic' value='Отчество,если желаете' name='your-patronymic' class='order-form__text'>
@@ -101,7 +101,6 @@
                 </div>
 
                 <div class='order-form__section'>
-
                     <p class='order-form__section-title'>Доп</p>
 
                     <textarea name='your-wishes' class='order-form__textarea' cols='20' rows='10'> Опишите все ваши пожелания к заказу</textarea>
@@ -109,13 +108,12 @@
                 <p class='order-form__field-required'><sup>*</sup>Поля обязательны для заполнения</p>
 
                 <button  class='order-form__btn  btn' href='#'>Отправить заказ</button>
-
             </form>
           </div>
         </section>
 
     <footer class='page-footer'>
-
+    <div class='page-footer__wrapper'>
         <section class='social-links'>
             <a class='social-link social-link--in' href='#'>Мы в инстаграмме</a>
             <a class='social-link social-link--fb' href='#'>Мы в фейсбуке</a>
@@ -126,7 +124,7 @@
             <span class='page-footer__text'>Разработано</span>
             <a class='page-footer__inner-link' href='https://htmlacademy.ru/intensive/adaptive'></a>
         </section>
-
+        </div>
     </footer>
 </body>
 
