@@ -1,36 +1,50 @@
-.production {
-    width: @mainMobileWidth;
-    .production__wrapper {
-        .wrapper();
-        .production__title {
-            margin: 0;
-            min-height: 95px;
-            font-size: 17px;
-            line-height: 24px;
-            padding-left: 90px;
-            padding-top: 25px;
-            background-image: url(../img/icon-video.svg);
-            background-repeat: no-repeat;
-            background-position: 20px;
-        }
-        .production__video {
-            position: relative;
-            .production__btn {
-                top: 10px;
-                left: 80px;
-                position: absolute;
-                font-size: 0;
-                width: 102px;
-                height: 78px;
-                background-image: url(../img/icon-play.svg);
-                background-repeat: no-repeat;
-            }
-        }
-        .production__btn {
-            padding: 20px 35px 16px 35px;
-            /*Почему не работает так,как предлполагается?*/
-            margin-top: 39px;
-            margin-bottom: 39px;
-        }
-    }
+
+.production__wrapper {
+    .wrapper();
+    padding: 0 30px;
 }
+.production__border {
+    border: 1px solid rgb(236, 236, 236);
+    min-height: 500px;
+    margin-bottom: 55px;
+}
+.production__title {
+    margin: 0;
+    min-height: 95px;
+    font-size: 17px;
+    line-height: 24px;
+    padding-left: 90px;
+    padding-top: 25px;
+    background-image: url(../img/icon-video.svg);
+    background-repeat: no-repeat;
+    background-position: 35px 25px;
+}
+.production__descr {
+    margin: 0;
+    font-size: 13px;
+    line-height: 24px;
+    text-align: left;
+    padding: 20px 15px 25px 30px;
+}
+.production__wrapper-btn {
+    padding: 0 34px;
+}
+.production__order-btn {
+    padding: 15px;
+}
+.production__video {
+    position: relative;
+}
+.production__btn {
+    top: 35px;
+    left: 80px;
+    position: absolute;
+    font-size: 0;
+    width: 102px;
+    height: 78px;
+    border: none;
+    background-color: transparent;
+    background-image: url(../img/icon-play.svg);
+    background-repeat: no-repeat;
+    }
+
