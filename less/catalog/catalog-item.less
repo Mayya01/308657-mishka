@@ -1,13 +1,12 @@
 .catalog-item {
+    position: relative;
     border: 1px solid rgb(236, 236, 236);
     margin-bottom: 30px;
     margin-top: 30px;
 }
 .catalog-item__title {
     margin: 0;
-}
-.catalog-item__img-title-wrapper {
-    margin: 25px;
+    padding: 25px 25px 0;
 }
 .catalog-item__img,
 .catalog-item__img img {
@@ -25,22 +24,20 @@
     margin: 0;
     font-size: 13px;
     line-height: 30px;
-    padding-top: 7px;
-    padding-bottom: 17px;
+    padding: 0 25px 25px 25px;
     border-bottom: 1px solid rgb(237, 237, 237);
 }
 .catalog-item__price {
     font-size: 15px;
     line-height: 24px;
     font-weight: bold;
+    margin: 0;
+    padding: 25px;
 }
-.catalog-item__price-btn-wrapper {
-    margin: 25px;
-    position: relative;
-}
+
 .btn-basket {
     position: absolute;
-    top: 0px;
+    bottom: 35px;
     right: 25px;
     display: block;
     width: 21px;

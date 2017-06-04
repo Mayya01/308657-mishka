@@ -64,7 +64,7 @@
                     <label for='gray-color' class='order-form__checkbox-label'>Серый</label>
 
                     <input type='checkbox' name='gray' id='tiffany-color' class='order-form__checkbox'>
-                    <label for='tiffany-color' class='order-form__checkbox-label'>'Тиффани'</label>
+                    <label for='tiffany-color' class='order-form__checkbox-label'>«Тиффани»</label>
 
                     <input type='checkbox' name='black' id='black-color' class='order-form__checkbox'>
                     <label for='black-color' class='order-form__checkbox-label'>Черный</label>
@@ -95,19 +95,23 @@
                     <p class='order-form__section-title'>тел</p>
 
                     <input type='tel' name='tel' class='order-form__tel' required value='+7 XXX XX XX'>
+                </div>
 
-                    <input type='email' name='email' value='Ваш Email' class='order-form__email' required>
+                <div class='order-form__section'>
+                <p class='order-form__section-title'>e-mail</p>
+                <input type='email' name='email' value='Ваш Email' class='order-form__email' required>
 
                 </div>
 
                 <div class='order-form__section'>
                     <p class='order-form__section-title'>Доп</p>
 
-                    <textarea name='your-wishes' class='order-form__textarea' cols='20' rows='10'> Опишите все ваши пожелания к заказу</textarea>
+                    <textarea name='your-wishes' class='order-form__textarea'>Опишите все ваши пожелания к заказу</textarea>
                 </div>
+
                 <p class='order-form__field-required'><sup>*</sup>Поля обязательны для заполнения</p>
 
-                <button  class='order-form__btn  btn' href='#'>Отправить заказ</button>
+                <button  class='order-form__btn  btn' type='submit'>Отправить заказ</button>
             </form>
           </div>
         </section>
