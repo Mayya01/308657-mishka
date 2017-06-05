@@ -12,6 +12,7 @@
     margin-bottom: 25px;
 }
 .order-form__section-title {
+    position: relative;
     font-size: @fontSizeBtn;
     color: @colorGreen;
     line-height: 16px;
@@ -31,8 +32,8 @@
     content: '';
     display: block;
     border-bottom: 1px solid @colorGreen;
-    position: relative;
-    top: -8px;
+    position: absolute;
+    top: 8px;
     left: 0px;
     right: 0;
 }
@@ -55,7 +56,7 @@
     margin-bottom: 43px;
 }
 .order-form__section-title--intend {
-    margin-bottom: 4px;
+    margin-bottom: 5px;
 }
 .order-form__radio-label::before {
     content: '';
@@ -119,7 +120,7 @@
     display: block;
     font-weight: bold;
     margin-top: 20px;
-    margin-bottom: 11px;
+    margin-bottom: 12px;
 }
 .order-form__text,
 .order-form__tel,
@@ -139,7 +140,7 @@ input[placeholder],
 .order-form__textarea {
     border: 2px solid rgb(68, 68, 68);
     width: 260px;
-    min-height: 140px;
+    min-height: 145px;
     font-size: 17px;
     line-height: 18px;
     font-family: 'Open Sans', 'Source Sans Pro', sans-serif;
@@ -156,6 +157,7 @@ input[placeholder],
     font-size: 14px;
     line-height: 16px;
     margin-bottom: 25px;
+    margin-top: 9px;
 }
 .order-form__btn {
     width: 100%;
