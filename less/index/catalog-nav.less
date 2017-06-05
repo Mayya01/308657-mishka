@@ -1,0 +1,33 @@
+.catalogMixin() {
+  background-repeat: no-repeat;
+  background-position: 57% 23px;;
+  text-align: center;
+}
+.catalog-nav__link--interior {
+    .catalogMixin();
+    background-image: url(../img/icon-interior.svg);
+    background-color: rgb(99, 209, 187);
+    padding: 25px 186px 30px 28px;
+}
+.catalog-nav__link--toys {
+    .catalogMixin();
+    background-image: url(../img/icon-toy.svg);
+    background-color: rgb(86, 195, 178);
+    padding:  25px 202px 30px 26px;
+}
+.catalog-nav__link {
+    display: block;
+    font-size: 19px;
+    line-height: @lineHeightLink;
+    min-height: 103px;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    text-decoration: none;
+    padding: 0;
+}
+.catalog-nav__wrapper {
+    width: 320px;
+    margin: 0 auto;
+    padding: 27px 120px 27px 30px;
+    text-align: left;
+}
