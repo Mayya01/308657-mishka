@@ -39,3 +39,71 @@
     margin-top: 25px;
     padding: 14px 10px;
 }
+.popular-item__price--top {
+    display: none;
+}
+@media (min-width: 768px) {
+    .popular-item__wrapper {
+        width: 768px;
+        margin: 0 auto;
+        padding: 0 50px;
+    }
+    .popular-item__inner {
+        display: flex;
+        justify-content: space-between;
+    }
+    .popular-item__title {
+        font-size: 43px;
+        line-height: 50px;
+        padding-top: 63px;
+    }
+    .popular-item__week {
+        font-size: 17px;
+        line-height: 17px;
+        width: 70px;
+        text-align: center;
+        margin-top: 75px;
+        margin-right: 30px;
+        margin-left: 14px;
+        /*Правильно ли подвинут этот элемент?*/
+    }
+    .popular-item__inner-wrapper {
+        display: flex;
+    }
+    .popular-item__flex-wrapper {
+        display: flex;
+    }
+    .popular-item__flex-inner {
+    display: flex;
+    flex-direction: column;
+    width: 290px;
+    }
+    .popular-item__picture {
+    margin-left: auto;
+        padding-top: 58px;
+    }
+    .popular-item__picture img {
+        width: 334px;
+        height: 404px;
+    }
+    .popular-item__descr {
+        font-size: 17px;
+        line-height: 30px;
+        padding: 47px 0 35px;
+
+    }
+    .popular-item__price--top {
+        display: block;
+        font-size: 20px;
+        line-height: 24px;
+        padding-top: 35px;
+    }
+    .popular-item__price--bottom {
+        display: none;
+    }
+    .popular-item__btn {
+    width: 290px;
+    margin-top: -79px; /*Подозреваю, что это совсем неправильное решение, но как сделать по-другому я не могу придумать. Помоги, пожалуйста*/
+    }
+
+}
