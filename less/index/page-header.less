@@ -4,8 +4,6 @@
 }
 .page-header__wrapper {
   .wrapper();
-  position: relative;
-  min-height: 80px;
   border-bottom: 1px solid rgb(236,236,236);
   border-top: 1px solid rgb(236,236,236);
 }
@@ -13,12 +11,14 @@
     font-size: 0;
     }
 .page-header__logo {
-  position: absolute;
-  top: 21px;
-  left: 50%;
-  bottom: 22px;
-  transform: translateX(-50%);
+  position: relative;
+    min-height: 80px;
     }
+.page-header__logo img {
+    position: absolute;
+    top: 30%;
+    left: 30%;
+}
 
 
 
