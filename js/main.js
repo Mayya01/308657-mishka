@@ -14,3 +14,4 @@ navToggler.addEventListener('click', function(){
         mainNav.classList.add('main-navigation--opened');
     }
 });
+
