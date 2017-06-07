@@ -31,8 +31,12 @@
 }
 
 .main-navigation__list {
+    width: 320px;
     margin: 0;
     padding: 0;
+    position: absolute;
+    background-color: rgb(255,255,255);
+    z-index: 1;
 }
 .main-navigation__item {
     list-style: none;
@@ -76,6 +80,8 @@
         position: absolute;
         top: 0px;
         right: 0px;
+        font-size: 17px;
+        line-height:88px;
     }
     .main-navigation__item:not(:last-child){
         display: none;

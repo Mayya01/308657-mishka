@@ -47,4 +47,48 @@
     background-image: url(../img/icon-play.svg);
     background-repeat: no-repeat;
     }
-
+@media (min-width: 768px) {
+    .production__wrapper {
+        width: 768px;
+        padding: 0 50px;
+    }
+    .production__video img {
+        width: 668px;
+        height: 455px;
+    }
+    .production__border {
+        display: flex;
+        flex-direction: column;
+        min-height: 743px;
+    }
+    .production__btn {
+        top: 42%;
+        left: 43%;
+    }
+    .production__video {
+        order: 1;
+    }
+    .production__descr {
+        font-size: 15px;
+        line-height: 30px;
+        order: 3;
+        padding: 0 15px 25px 35px;
+    }
+    .production__title {
+        font-size: 20px;
+        line-height: 24px;
+        order: 2;
+        padding-left: 105px;
+        text-align: left;
+        padding-right: 105px;
+        padding-top: 30px;
+        padding-bottom: 30px;
+        background-position: 40px 25px;
+        min-height: 87px;
+    }
+    .production__wrapper-btn {
+        order: 4;
+        padding: 0 40px;
+        margin-top: 15px;
+    }
+}
