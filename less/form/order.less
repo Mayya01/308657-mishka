@@ -163,4 +163,176 @@ input[placeholder],
     width: 100%;
     margin-bottom: 53px;
 }
+@media (min-width: 768px) {
+    .order__wrapper {
+        width: 768px;
+        padding: 0;
+    }
+    .order-form__descr {
+        font-size: 17px;
+        line-height: 30px;
+        padding: 0 50px;
+    }
+    .order {
+        margin-top: 85px;
+    }
+    .order-form__section-title::after {
+        display: none;
+    }
+    .order-form__radio-label::before {
+        width: 53px;
+        height: 53px;
+        top: -15px;
+        left: -20px;
+    }
+    .order-form__radio:checked + label:after {
+        top: 0px;
+        left: -5px;
+        width: 22px;
+        height: 22px;
+        }
+     .order-form__radio-label {
+        margin-bottom: 60px;
+    }
+    .order-form__checkbox-label,
+    .order-form__radio-label,
+    .order-form__text-label {
+        font-size: 19px;
+        line-height: 18px;
+    }
+    input[placeholder],
+    .order-form__textarea {
+        font-size: 19px;
+        line-height: 18px;
+    }
+    .order-form__section-title {
+        margin: 0;
+    }
+    .order-form__section:nth-of-type(2) .order-form__section-title {
+        padding: 70px 10px 70px 0;
+        display: inline-block;
+        text-align: left;
+    }
+    .order-form__radio-wrapper {
+        margin-left: 150px;
+    }
+    .order-form__section {
+        padding: 0 50px;
+    }
+    .order-form__section:nth-of-type(1) {
+        display: flex;
+        margin-top: 70px;
+        margin-bottom: 10px;
+    }
+    .order-form__section:nth-of-type(2) {
+        background-color: rgb(241,241,241);
+        min-height: 304px;
+        margin-bottom: 10px;
+        display: flex;
+    }
+    .order-form__section:nth-of-type(3) {
+        display: flex;
+        margin-bottom: 15px;
+    }
+    .order-form__checkbox-wrapper:nth-of-type(1) {
+        margin-left: 110px;
+        display: flex;
+        padding-top: 50px;
+        flex-wrap: wrap;
+    }
+    .order-form__checkbox-label {
+        padding-left: 80px;
+    }
+    .order-form__section-title-text {
+        padding-right: 0;
+    }
+    .order-form__checkbox-label::before {
+        width: 54px;
+        height: 52px;
+        top: -15px;
+        left: -1px;
+    }
+    .order-form__checkbox:checked + .order-form__checkbox-label::after {
+        width: 33px;
+        height: 22px;
+    }
+    label[for='pink-color'] {
+        margin-top: 0;
+        padding-right: 94px;
+    }
+    label[for='tiffany-color'] {
+        margin-top: 4px;
+        padding-right: 65px;
+    }
+    label[for='white-color']{
+        padding-right: 115px;
+    }
+    label[for='black-color'] {
+        margin-top: 4px;
+    }
+/*Нужна помощь со стилизацией чекбокса оранжевого*/
+    .order-form__text-wrapper {
+        margin-left: 125px;
+        display: flex;
+        padding-top: 50px;
+        flex-wrap: wrap;
+    }
+    .order-form__text-inner {
+        display: flex;
+    }
+    .order-form__text-label {
+        margin-top: 5px;
+        margin-right: 25px;
+    }
+    .order-form__text:nth-of-type(1) {
+        text-align: left;
+        padding: 5px 5px 14px 15px;
+        margin-bottom: 32px;
+        width: 427px;
+    }
+    .order-form__text-label:nth-of-type(2) {
+        margin-top: 10px;
+        margin-right: 25px;
+    }
+    .order-form__section-title--intend {
+        padding: 60px 0px 70px 0;
+    }
+    .order-form__section:nth-of-type(4) {
+        background-color: rgb(241,241,241);
+        min-height: 230px;
+        display: flex;
+        flex-direction: column;
+    }
+    .order-form__tel-wrapper {
+        display: flex;
+    }
+    .order-form__email-wrapper {
+        display: flex;
+    }
+    .order-form__tel-wrapper .order-form__section-title {
+        margin-right: 135px;
+        padding: 65px 0px 10px 0;
+    }
+    .order-form__tel {
+        background-color: rgb(241,241,241);
+        padding-top: 65px;
+        padding-left: 15px;
+        padding-bottom: 15px;
+    }
+    .order-form__email-wrapper .order-form__section-title {
+        margin-right: 100px;
+        padding: 0;
+        width: 90px;
+    }
+    .order-form__email {
+        background-color: rgb(241,241,241);
+        padding-left: 15px;
+        padding-bottom: 15px;
+    }
+    .order-form__section-title-text {
+        background-color: transparent;
+    }
+}
+
+
 
