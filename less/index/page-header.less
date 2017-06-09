@@ -33,6 +33,27 @@
         top: 20%;
         left: 1%;
     }
+    .page-header__logo::after {
+        content: '';
+        position: absolute;
+        top: 35%;
+        left: 53%;
+        display: block;
+        width: 18px;
+        height: 18px;
+        background-image: url(../img/icon-search.svg);
+    }
+    .page-header__logo::before {
+        content: '';
+        position: absolute;
+        top: 35%;
+        right: 32%;
+        display: block;
+        width: 21px;
+        height: 18px;
+        background-image: url(../img/icon-cart.svg);
+        /*Это ведь неправильное решение? на мобильной версии я позиционировала относительно .main-navigation__item, а сейчас относительно .page-header__logo. можно ли сделать два бордера вокруг icon-search тоже через псевдоэлементы? */
+    }
 }
 
 

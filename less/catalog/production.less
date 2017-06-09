@@ -29,6 +29,11 @@
 .production__wrapper-btn {
     padding: 0 34px;
 }
+.production__order-btn:active {
+    box-shadow: 3px 3px 5px 0px rgba(0, 0, 0, 0.9);
+}
+
+
 .production__order-btn {
     padding: 15px;
 }
@@ -47,6 +52,18 @@
     background-image: url(../img/icon-play.svg);
     background-repeat: no-repeat;
     }
+.production__btn:active{
+    /*background-size: contain;*/
+    width: 80px;
+    height: 61px;
+    opacity: 0.3;
+    /*Почему не работает?*/
+}
+.production__btn:hover {
+    background-size: cover;
+    width: 121px;
+    height: 92px;
+}
 @media (min-width: 768px) {
     .production__wrapper {
         width: 768px;
