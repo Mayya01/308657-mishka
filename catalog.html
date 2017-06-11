@@ -3,6 +3,7 @@
 
 <head>
   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width">
   <title>HTML Academy: Мишка</title>
   <link href="css/style.css" rel="stylesheet">
 </head>
@@ -23,29 +24,24 @@
         <button type='button' class='main-navigation__toggler'><span></span>
         </button>
         <ul class='main-navigation__list'>
-          <li class='main-navigation__item'><a href='#'>Каталог товара</a>
-          </li>
-          <li class='main-navigation__item'><a href='#'>Вязание на заказ</a>
-          </li>
-          <li class='main-navigation__item main-navigation__item--search'><a href='#'>Поиск по сайту</a>
-          </li>
-          <li class='main-navigation__item main-navigation__item--basket'><a href='#'>Корзина: пока пуста</a>
-          </li>
-        </ul>
+                <li class='main-navigation__item main-navigation__item--search'><a href='#'>Поиск по сайту</a>
+                    </li>
+                <li class='main-navigation__item main-navigation__item--basket'><a href='#'>Корзина: пока пуста</a>
+                <li class='main-navigation__item main-navigation__item--new'><a href='#'>Новые поступления</a>
+                <li class='main-navigation__item main-navigation__item--sale'><a href='#'>Распродажа</a>
+            </ul>
+            <ul class='main-navigation__list'>
+                <li class='main-navigation__item main-navigation__item--catalog'><a href='#'>Каталог товаров</a>
+                    </li>
+                <li class='main-navigation__item main-navigation__item--order'><a href='#'>Вязание на заказ</a>
+                </li>
+                <li class='main-navigation__item main-navigation__item--delivery'>Бесплатная доставка по России
+                </li>
+            </ul>
       </nav>
     </div>
   </header>
-
   <section class='title'>
-        <ul class='title__list'>
-            <li class='title__item'><a href='#'>Каталог товаров</a>
-            </li>
-            <li class='title__item'><a href='#'>Вязание на заказ</a>
-            </li>
-            <li class='title__item'>Бесплатная доставка по России
-            </li>
-        </ul>
-
     <h1 class='title__catalog'>Каталог товаров</h1>
 
   </section>
@@ -81,7 +77,7 @@
         <div class='catalog-item__info-block'>
         <h3 class='catalog-item__title'><a href ='#'>Большая&nbsp;корзинка для&nbsp;игрушек</a></h3>
         <p class='catalog-item__descr'> Диаметр 30 см, высота 30 см</p>
-        <p class='catalog-item__price'> 1 500 руб.</p>
+        <p class='catalog-item__price catalog-item__price--intend'> 1 500 руб.</p>
         <a href='#' class='btn-basket'></a>
           </div>
       </article>
@@ -97,11 +93,12 @@
           <img src='img/video-mobile@1x.jpg' width="260" height="150" alt='Процесс производства'>
           <button class='production__btn'></button>
         </div>
-
+        <h2 class='production__title'>Процесс производства</h2>
         <p class='production__descr'> По просьбам&nbsp;наших любимых&nbsp;фолловеров мы сняли&nbsp;для&nbsp; вас подробное видео о&nbsp;том, как появляются наши&nbsp;товары.</p>
         <div class='production__wrapper-btn'>
           <a class='production__order-btn btn'>Сделать заказ</a>
         </div>
+        
       </div>
     </div>
   </section>

@@ -10,7 +10,7 @@
 </head>
 
 <body>
-
+ 
     <header class='page-header'>
         <div class='page-header__wrapper'>
             <h1 class='page-header__title'>Мишка</h1>
@@ -23,16 +23,23 @@
             <nav class='main-navigation main-navigation--nojs main-navigation--opened'>
                 <button type='button' class='main-navigation__toggler'><span></span>
                 </button>
-                <ul class='main-navigation__list'>
-                    <li class='main-navigation__item'><a href='#'>Каталог товара</a>
+            <ul class='main-navigation__list'>
+                <li class='main-navigation__item main-navigation__item--search'><a href='#'>Поиск по сайту</a>
                     </li>
-                    <li class='main-navigation__item'><a href='#'>Вязание на заказ</a>
+                <li class='main-navigation__item main-navigation__item--basket'><a href='#'>Корзина: пока пуста</a>
+            </ul>
+            <ul class='main-navigation__list'>
+                <li class='main-navigation__item main-navigation__item--new'><a href='#'>Новые поступления</a>
+                <li class='main-navigation__item main-navigation__item--sale'><a href='#'>Распродажа</a>
+            </ul>
+            <ul class='main-navigation__list'>
+                <li class='main-navigation__item main-navigation__item--catalog'><a href='#'>Каталог товаров</a>
                     </li>
-                    <li class='main-navigation__item main-navigation__item--search'><a href='#'>Поиск по сайту</a>
-                    </li>
-                    <li class='main-navigation__item main-navigation__item--basket'><a href='#'>Корзина: пока пуста</a>
-                    </li>
-                </ul>
+                <li class='main-navigation__item main-navigation__item--order'><a href='#'>Вязание на заказ</a>
+                </li>
+                <li class='main-navigation__item main-navigation__item--delivery'>Бесплатная доставка по России
+                </li>
+            </ul>
             </nav>
         </div>
 
@@ -41,16 +48,6 @@
 
     <section class='main-descr'>
         <div class='main-descr__main-img'>
-           <div class='main-descr__wrapper-list'>
-            <ul class='main-descr__list'>
-                <li class='main-descr__item'><a href='#'>Каталог товаров</a>
-                    </li>
-                    <li class='main-descr__item'><a href='#'>Вязание на заказ</a>
-                    </li>
-                    <li class='main-descr__item'>Бесплатная доставка по России
-                    </li>
-            </ul>
-            </div>
             <h2 class='main-descr__title'> Милые&nbsp;штуки ручной работы&nbsp;для&nbsp;дома</h2>
         </div>
     </section>
@@ -89,6 +86,7 @@
             </p>
             </div>
             <div class='popular-item__picture'>
+                <h3 class='popular-item__title'>Вязаные корзинки</h3>
                 <img src="img/triple-set-mobile@1x.jpg" alt='Вязаные корзинки' width="260" height="315">
             </div>
             </div>
@@ -136,6 +134,7 @@
     </section>
 
     <section class='contacts'>
+        <div class='contacts__map-row-wrapper'>
        <div class='contacts__wrapper'>
         <h3 class='contacts__title'>Контакты</h3>
         <div class='contacts__row-wrapper'>
@@ -154,6 +153,7 @@
         <div class='contacts__map'>
             <!--для карты-->
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.5991043651647!2d30.320894616405283!3d59.93879418187615!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xfbeb3cbd3eed50c8!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCAxMDEsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1495810554958"  class='contacts__frameborder'  allowfullscreen></iframe>
+        </div>
         </div>
       <div class='contacts__wrapper-btn'>
         <a class='btn contacts__btn' href='#'>Напишите нам</a>

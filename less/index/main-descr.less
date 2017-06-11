@@ -25,45 +25,21 @@
     .main-descr__title {
         font-size: 43px;
         line-height: 50px;
-        padding: 110px 37px 119px 37px;
+        padding: 150px 37px 119px 37px;
     }
-    .main-descr__wrapper-list {
-        width: 768px;
-        padding: 0 50px;
-    }
-    .main-descr__list {
-        margin: 0;
-        display: block;
-        padding: 0;
-        display: flex;
-        padding-top: 20px;
-    }
-    .main-descr__item {
-        list-style: none;
-        display: inline-block;
-    }
-    .main-descr__item a {
-        text-decoration: none;
-        color: @mainColor;
-        font-weight: bold;
-        font-size: 15px;
-        font-family: @fontFamilyRegular;
-        line-height: @lineHeightLink;
-        display: block;
-    }
-    .main-descr__item:nth-child(2){
-        margin: 0 34px;
-    }
-    .main-descr__item:last-child {
-        font-size: 15px;
-        line-height: 24px;
-        font-weight: normal;
-        margin-left: auto;
-    }
-    .main-descr__item a:hover {
-        color: rgb(141,141,141);
 }
-    .main-descr__item a:active {
-        color: rgb(202,202,202);
-}
+@media (min-width: 1250px) {
+    .main-descr__main-img {
+        width: 1250px;
+        height: 748px;
+        margin: 0 auto;
+        background-size: cover;
+        
+    }
+    .main-descr__title {
+        font-size: 53px;
+        line-height: 57px;
+        padding: 150px 80px 119px 80px
+    }
+    
 }

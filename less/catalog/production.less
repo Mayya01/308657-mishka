@@ -33,7 +33,6 @@
     box-shadow: 3px 3px 5px 0px rgba(0, 0, 0, 0.9);
 }
 
-
 .production__order-btn {
     padding: 15px;
 }
@@ -107,6 +106,26 @@
         order: 4;
         padding: 0 40px;
         margin-top: 15px;
+    }
+    .production__title:nth-of-type(2) {
+        display: none;
+    }
+}
+@media (min-width: 1250px) {
+    .production__wrapper {
+        width: 1150px;
+        padding: 0 50px;
+    }
+    .production__border,
+    .production__title:nth-of-type(2){
+        display: block;
+    }
+    .production__title:nth-of-type(1) {
+        display: none;
+    }
+    .production__border{
+        flex-direction: row;
+        /*Нужна помощь*/
     }
 }
 

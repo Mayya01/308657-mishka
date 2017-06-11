@@ -20,40 +20,34 @@
     left: 30%;
 }
 @media (min-width: 768px) {
-    .page-header {
-        min-height: 80px;
-    }
-    .page-header__wrapper {
+.page-header__wrapper {
         width: 768px;
         padding: 0 50px;
         border: 1px solid rgb(236, 236, 236);
         position: relative;
+        height: 90px;
     }
-    .page-header__logo img {
-        top: 20%;
-        left: 1%;
+    
+.page-header__logo img {
+        top: 30px;
+        left: 0;
     }
-    .page-header__logo::after {
-        content: '';
-        position: absolute;
-        top: 35%;
-        left: 53%;
-        display: block;
-        width: 18px;
-        height: 18px;
-        background-image: url(../img/icon-search.svg);
+.page-header__logo {
+    position: relative;
+    min-height: 0px;
+}
+}
+@media (min-width: 1250px) {
+    
+    .page-header__wrapper {
+        width: 1250px;
+        padding: 0 100px;
+        border: none;
     }
-    .page-header__logo::before {
-        content: '';
-        position: absolute;
-        top: 35%;
-        right: 32%;
-        display: block;
-        width: 21px;
-        height: 18px;
-        background-image: url(../img/icon-cart.svg);
-        /*Это ведь неправильное решение? на мобильной версии я позиционировала относительно .main-navigation__item, а сейчас относительно .page-header__logo. можно ли сделать два бордера вокруг icon-search тоже через псевдоэлементы? */
-    }
+    .page-header__logo {
+ 
+    min-height: 0;
+}
 }
 
 
