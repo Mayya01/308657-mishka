@@ -34,10 +34,6 @@
     flex-direction: column;
     
 }
- .main-navigation__list:nth-of-type(1) {
-    order: 2;
-    
-}
 .main-navigation__list {
     width: 320px;
     margin: 0;
@@ -45,7 +41,6 @@
     background-color: rgb(255,255,255);
     z-index: 1;
 }
-
 .main-navigation__item {
     list-style: none;
     text-align: left;
@@ -119,15 +114,16 @@
         position: static;
         width: 100%;
     }
-    .main-navigation {
-        display: block;
-    }
     .main-navigation__list:nth-of-type(1) {
-        justify-content: flex-end;
+        order: 2;
+        background: transparent;
         }
+    .main-navigation__list:nth-of-type(2) {
+        order: 1;
+        justify-content: flex-end;
+    }
     .main-navigation__list:nth-of-type(3) {
-        justify-content: flex-start;
-        background-color: transparent;
+        display: none;
     }
     .main-navigation__item {
         border: none;
@@ -183,16 +179,29 @@
         font-weight: normal;
         padding: 0;
     }
-    .main-navigation__item--new, 
-    .main-navigation__item--sale {
-        display: none;
-    }
 
 }
 @media (min-width: 1250px)  {
-    .main-navigation__item:last-child {
-        position: static;
+    .main-navigation {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
     }
+    .main-navigation__list:nth-of-type(1) {
+        order: 1;
+        width: 50%;
+    }
+    .main-navigation__list:nth-of-type(2) {
+        order: 2;
+        width: 50%;
+    }
+    .main-navigation__list:nth-of-type(3) {
+         display: flex;
+        order: 3;
+        background: transparent;
+        width: 50%;
+    }
+
     .main-navigation__list {
         min-height: 90px;
         display: flex;
@@ -207,6 +216,20 @@
     .main-navigation__item--new, 
     .main-navigation__item--sale {
         display: block;
+        font-size: 15px;
+        line-height: 24px;
+    }
+    .main-navigation__item--catalog {
+        padding: 35px 70px 28px 0px;
+    }
+    .main-navigation__item--order {
+        padding: 35px 55px 28px 0px;
+    }
+    .main-navigation__item--new {
+        padding: 20px 60px 10px 0;
+    }
+    .main-navigation__item--sale {
+        padding: 20px 10px 10px 0;
     }
 }
 

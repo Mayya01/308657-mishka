@@ -113,35 +113,56 @@
     width: 290px;
     margin-top: -79px; /*Подозреваю, что это совсем неправильное решение, но как сделать по-другому я не могу придумать. Помоги, пожалуйста*/
     }
-    .popular-item__picture .popular-item__title {
-        
-        display: none;
-    }
     
 }
 @media (min-width: 1250px) {
     .popular-item__wrapper {
         width: 1250px;
         padding: 0 100px;
+        margin-top: 71px;
+        position: relative;
     }
       .popular-item__picture img {
         width: 525px;
         height: 638px;
     }
-    .popular-item__inner .popular-item__title {
-        display: none;
+    .popular-item__title {
+        font-size: 53px;
+        line-height: 57px;
+        order: 2;
     }
-    .popular-item__picture .popular-item__title {
-        display: block;
+    .popular-item__week {
+        margin-top: 75px;
+        margin-left: -15px;
+        margin-right: 60px;
     }
     .popular-item__picture {
         display: inline-block;
         position: relative;
+        padding: 0;
     }
-    .popular-item__title {
+    .popular-item__inner {
+        justify-content: inherit;
         position: absolute;
-        display: inline-block;
-        font-size: 53px;
-        line-height: 57px;
+        z-index: 10;
+        top: -10px;
+        left: 160px;
     }
+    .popular-item__flex-wrapper {
+        padding: 0 0 0 175px;
+    }
+    .popular-item__flex-inner {
+        margin-top: 110px;
+    }
+    .popular-item__descr {
+        padding: 47px 0 53px;
+    }
+    .popular-item__price--top {
+        padding-top: 85px;
+    }
+    .popular-item__btn {
+        margin-left: 177px;
+        margin-top: -60px;
+    }
+
 }

@@ -3,6 +3,7 @@
 
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
   <title>HTML Academy: Мишка</title>
   <link href="css/style.css" rel="stylesheet">
 </head>
@@ -19,33 +20,29 @@
         </a>
       </div>
 
-      <nav class='main-navigation main-navigation--nojs main-navigation--opened'>
-        <button type='button' class='main-navigation__toggler'><span></span>
-        </button>
-        <ul class='main-navigation__list'>
-          <li class='main-navigation__item'><a href='#'>Каталог товара</a>
-          </li>
-          <li class='main-navigation__item'><a href='#'>Вязание на заказ</a>
-          </li>
-          <li class='main-navigation__item main-navigation__item--search'><a href='#'>Поиск по сайту</a>
-          </li>
-          <li class='main-navigation__item main-navigation__item--basket'><a href='#'>Корзина: пока пуста</a>
-          </li>
-        </ul>
-      </nav>
+        <nav class='main-navigation main-navigation--nojs main-navigation--opened'>
+                <button type='button' class='main-navigation__toggler'><span></span>
+                </button>
+            <ul class='main-navigation__list'>
+                <li class='main-navigation__item main-navigation__item--catalog'><a href='#'>Каталог товаров</a></li>
+                <li class='main-navigation__item main-navigation__item--order'><a href='#'>Вязание на заказ</a>
+                </li>
+            </ul>
+            <ul class='main-navigation__list'>
+                <li class='main-navigation__item main-navigation__item--search'><a href='#'>Поиск по сайту</a></li>
+                <li class='main-navigation__item main-navigation__item--basket'><a href='#'>Корзина: пока пуста</a>
+            </ul>
+            <ul class='main-navigation__list'>
+                <li class='main-navigation__item main-navigation__item--new'><a href='#'>Новые поступления</a>
+                <li class='main-navigation__item main-navigation__item--sale'><a href='#'>Распродажа</a>
+            </ul>
+            <a class='page-header__link-delivery'>Бесплатная доставка по России</a>
+        </nav>
     </div>
   </header>
 
 
   <section class='title'>
-    <ul class='title__list'>
-      <li class='title__item'><a href='#'>Каталог товаров</a>
-      </li>
-      <li class='title__item'><a href='#'>Вязание на заказ</a>
-      </li>
-      <li class='title__item'>Бесплатная доставка по России
-      </li>
-    </ul>
     <h1 class='title__order'>Вязание&nbsp;на&nbsp;заказ</h1>
   </section>
 
