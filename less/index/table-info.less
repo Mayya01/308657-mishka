@@ -1,6 +1,7 @@
 .table-info {
     border-collapse: collapse;
     width: 100%;
+    margin-bottom: 365px;
     td {
         padding-bottom: 10px;
         font-size: 15px;
@@ -9,5 +10,10 @@
 }
 .table-info__row {
     border-bottom: 1px solid rgb(236, 236, 236);
-  height: 40px;
+    height: 40px;
+}
+@media (min-width: 768px) {
+    .table-info {
+       margin-bottom: 0;  
+    }
 }

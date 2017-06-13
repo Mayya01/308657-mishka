@@ -1,6 +1,7 @@
 .popular-item__wrapper {
   .wrapper();
   padding: 0 30px;
+ position: relative;
 }
 .popular-item__title {
     font-size: 25px;
@@ -27,6 +28,9 @@
 .popular-item__picture {
     padding-bottom: 20px;
     padding-top: 28px;
+    position: absolute;
+    top: 315px;
+
 }
 .popular-item__price {
     font-weight: bold;
@@ -40,9 +44,7 @@
     margin-top: 25px;
     padding: 14px 10px;
 }
-.popular-item__price--top {
-    display: none;
-}
+
 .popular-item__picture .popular-item__title {
         display: none;
     }
@@ -51,6 +53,7 @@
         width: 768px;
         margin: 0 auto;
         padding: 0 50px;
+        position: static;
     }
     .popular-item__inner {
         display: flex;
@@ -87,8 +90,9 @@
     } Приемлим ли такой  вариат? Если да, то какой лучше? */
 
     .popular-item__picture {
-    margin-left: auto;
+        margin-left: auto;
         padding-top: 58px;
+        position: static;
     }
     .popular-item__picture img {
         width: 334px;
@@ -100,25 +104,27 @@
         padding: 47px 0 35px;
 
     }
-    .popular-item__price--top {
-        display: block;
+    .popular-item__price {
         font-size: 20px;
         line-height: 24px;
-        padding-top: 35px;
+        margin: 0;
+        margin-top: 32px;
     }
-    .popular-item__price--bottom {
-        display: none;
+    .popular-item__btn-price {
+        width: 290px;
+        display: flex;
+        flex-direction: column;
+        margin-top: 25px;
     }
     .popular-item__btn {
-    width: 290px;
-    margin-top: -79px; /*Подозреваю, что это совсем неправильное решение, но как сделать по-другому я не могу придумать. Помоги, пожалуйста*/
+        margin-top: 35px;
     }
-    
+
 }
-@media (min-width: 1250px) {
+@media (min-width: 1150px) {
     .popular-item__wrapper {
-        width: 1250px;
-        padding: 0 100px;
+        width: 1150px;
+        padding: 0 50px;
         margin-top: 71px;
         position: relative;
     }
@@ -138,7 +144,6 @@
     }
     .popular-item__picture {
         display: inline-block;
-        position: relative;
         padding: 0;
     }
     .popular-item__inner {
@@ -147,6 +152,9 @@
         z-index: 10;
         top: -10px;
         left: 160px;
+    }
+    .popular-item__price  {
+        margin-top: 75px;
     }
     .popular-item__flex-wrapper {
         padding: 0 0 0 175px;
@@ -160,9 +168,6 @@
     .popular-item__price--top {
         padding-top: 85px;
     }
-    .popular-item__btn {
-        margin-left: 177px;
-        margin-top: -60px;
-    }
+
 
 }
