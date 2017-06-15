@@ -131,8 +131,11 @@
     border: none;
     border-bottom: 2px solid rgb(0, 0, 0);
 }
-input[placeholder],
+.order-form__text,
+.order-form__tel,
+.order-form__email,
 .order-form__textarea {
+    font-family: 'Open Sans', 'Source Sans Pro', sans-serif;
     color: rgb(210, 210, 210);
     font-size: 17px;
     line-height: 18px;
@@ -225,10 +228,14 @@ input[placeholder],
         font-size: 19px;
         line-height: 18px;
     }
-    input[placeholder],
+    
+    .order-form__text,
+    .order-form__tel,
+    .order-form__email,
     .order-form__textarea {
         font-size: 19px;
         line-height: 18px;
+        font-family: 'Open Sans', 'Source Sans Pro', sans-serif;
     }
     .order-form__section-title {
         margin: 0;
@@ -249,30 +256,36 @@ input[placeholder],
         margin-top: 0;
         margin-bottom: 0;
     }
+    .order-form__section {
+        display: flex;
+    }
      
-    .order-form__section:nth-of-type(1),
-    .order-form__section:nth-of-type(4){
+    .order-form__section:nth-of-type(1){
         min-height: 230px;
         padding-top: 70px;
-        display: flex;
         margin-bottom: 0;
     }
     .order-form__section:nth-of-type(5) {
-        display: flex;
         padding-top: 50px;
     }
-     .order-form__section:nth-of-type(2),
-    .order-form__section:nth-of-type(3) {
+     .order-form__section:nth-of-type(2) {
         min-height: 305px;
-        display: flex;
         padding-top: 70px;
-    }
-
-    .order-form__section:nth-of-type(2) {
         background-color: rgb(241,241,241);
-        min-height: 304px;
         margin-bottom:0;
     }
+    .order-form__section:nth-of-type(3) {
+        padding-top: 51px;
+        min-height: 305px;
+    }
+    .order-form__section:nth-of-type(4) {
+        background-color: rgb(241,241,241);
+        flex-direction: column;
+        padding-top: 51px;
+        min-height: 230px;
+        margin-bottom: 0;
+    }
+
     .order-form__checkbox-wrapper {
         margin-left: 120px;
         display: flex;
@@ -303,23 +316,30 @@ input[placeholder],
         height: 22px;
     }
     .order-form__text-wrapper {
-        margin-left: 125px;
-        display: flex;
         padding: 0;
-        flex-wrap: wrap;
+        margin-left: 115px;
     }
     .order-form__text-inner {
         display: flex;
+        margin-bottom: 26px;
+        height: 50px;
     }
     .order-form__text-label {
-        margin-top: 5px;
-        margin-right: 25px;
+        margin: 0;
+        padding: 13px 25px 18px 0;
     }
-    .order-form__text {
+      .order-form__text--surname,
+      .order-form__text--patronymic,
+      .order-form__text--name {
+        padding: 12px 15px 17px 18px;
+        height: 50px;
+        margin: 0;
         text-align: left;
-        padding: 5px 5px 14px 15px;
-        margin-bottom: 32px;
     }
+    .order-form__section:nth-of-type(3) .order-form__section-title {
+        padding:  15px 10px 10px 0px;
+    }
+
     .order-form__text--name {
         width: 427px;
     }
@@ -327,31 +347,31 @@ input[placeholder],
     .order-form__text--patronymic {
         width: 380px;
     }
-    .order-form__section:nth-of-type(4) {
-        background-color: rgb(241,241,241);
-        flex-direction: column;
-    }
-    .order-form__tel-wrapper {
-        display: flex;
-    }
+    .order-form__tel-wrapper, 
     .order-form__email-wrapper {
         display: flex;
+        margin-bottom: 26px;
     }
     .order-form__tel, .order-form__email {
         background-color: rgb(241,241,241);
         margin: 0;
         padding: 0;
+        width: 500px;
     }
     .order-form__tel {
-        margin-left: 133px;
-        padding:  0px 10px 10px 15px;
+        margin-left: 125px;
+        padding: 11px 10px 10px 15px;
     }
     .order-form__email {
-        margin-left: 100px;
-        padding: 35px 10px 15px 15px;
+        margin-left: 97px;
+        height: 50px;
+        padding: 14px 10px 10px 15px;
     }
-    .order-form__section-title--email {
-        padding: 40px 0px 10px 0px;
+    .order-form__section-title--email{
+        padding: 19px 5px 10px 0px;
+    }
+    .order-form__section-title--tel {
+        padding:  15px 10px 10px 0px;
     }
     .order-form__section-title-text {
         background-color: transparent;
@@ -408,7 +428,24 @@ input[placeholder],
     .order-form__radio-wrapper {
         margin-left: 90px;
     }
-    .order-form__section, .order-form__section:nth-of-type(2), .order-form__section:nth-of-type(3)  {
+    .order-form__checkbox-label,
+    .order-form__radio-label,
+    .order-form__text-label {
+        font-size: 19px;
+        line-height: 18px;
+        font-family: 'Open Sans', 'Source Sans Pro', sans-serif;
+    }
+    
+    .order-form__text,
+    .order-form__tel,
+    .order-form__email,
+    .order-form__textarea {
+        font-size: 19px;
+        line-height: 18px;
+        font-family: 'Open Sans', 'Source Sans Pro', sans-serif;
+    }
+    .order-form__section, 
+    .order-form__section:nth-of-type(2),  {
         min-height: 230px;
         padding-top: 70px;
         margin-top: 0;
@@ -417,12 +454,17 @@ input[placeholder],
     .order-form__section:nth-of-type(3) {
         min-height: 305px;
         margin-bottom: 0;
-        padding-top: 65px;
+        margin-top: 0;
+        padding-top: 51px;
     }
     .order-form__section-title {
         padding: 0px 10px 10px 60px;
         margin-right: 0;
     }
+    .order-form__section:nth-of-type(3) .order-form__section-title {
+        padding: 15px 10px 10px 60px;
+    }
+    
     .order-form__checkbox-wrapper, 
     .order-form__text-wrapper {
         margin-left: 60px;
@@ -432,14 +474,11 @@ input[placeholder],
         width: 250px;
         padding-right: 0;
     } 
-    .order-form__checkbox-label:nth-of-type(-n+2), .order-form__checkbox-label:nth-of-type(n+4) {
+    .order-form__checkbox-label:nth-of-type(-n+2), 
+    .order-form__checkbox-label:nth-of-type(n+4) {
         margin-right: 13px;
     }
-    .order-form__text {
-        margin-bottom: 0;
-        padding: 0px 5px 0px 15px;
-        padding-bottom: 0;
-    }
+  
     .order-form__text--surname,
     .order-form__text--patronymic {
         width: 575px;
@@ -447,20 +486,29 @@ input[placeholder],
     .order-form__text--name {
         width: 626px;
     }
+    .order-form__text--surname,
+    .order-form__text--patronymic,
+    .order-form__text--name {
+        padding: 12px 15px 17px 18px;
+        height: 50px;
+        margin: 0;
+    }
     .order-form__text-wrapper {
         padding: 0 175px 0 0;
     }
     .order-form__text-label {
-        margin-top: 0;
-        margin-bottom: 0;
+        margin: 0;
+        padding: 13px 25px 18px 0;
     }
     .order-form__text-inner {
         height: 50px;
+        margin-bottom: 26px;
     }
     .order-form__tel,
     .order-form__email {
         padding: 0 10px 10px 15px;
         margin-bottom: 35px;
+        width: 700px;
     }
     .order-form__tel {
         margin-left: 73px;
