@@ -49,7 +49,7 @@
     <div class='order__wrapper'>
       <form class='order-form' action=https://echo.htmlacademy.ru/ method='get'>
         <p class='order-form__descr'>Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали</p>
-        <div class='order-form__section order-form__section--intend'>
+        <div class='order-form__section order-form__section--intend order-form__section--type'>
           <p class='order-form__section-title'><span class='order-form__section-title-text'>Тип</span>
           </p>
           <div class='order-form__radio-wrapper'>
@@ -61,9 +61,10 @@
             <label for='toy' class='order-form__radio-label'>Детская игрушка</label>
           </div>
         </div>
-
-
-        <div class='order-form__section'>
+          
+        <div class='order-form__color'>
+        <div class='order-form__section order-form__section--color'>
+           
           <p class='order-form__section-title'><span class='order-form__section-title-text'>Цвет</span>
           </p>
           <div class='order-form__checkbox-wrapper'>
@@ -85,11 +86,12 @@
             <input type='checkbox' name='orange' id='orange-color' class='order-form__checkbox'>
             <label for='orange-color' class='order-form__checkbox-label'>Оранжевый</label>
           </div>
-        </div>
+            </div>
+          </div>
+           
+        <div class='order-form__section order-form__section--name'>
 
-        <div class='order-form__section'>
-
-          <p class='order-form__section-title order-form__section-title--intend'><span class='order-form__section-title-text'>Фио</span>
+          <p class='order-form__section-title order-form__section-title--name '><span class='order-form__section-title-text'>Фио</span>
           </p>
           <div class='order-form__text-wrapper'>
             <div class='order-form__text-inner'>
@@ -106,26 +108,29 @@
             </div>
           </div>
         </div>
+       
 
-        <div class='order-form__section'>
+        <div class='order-form__color'>
+          <div class='order-form__section order-form__section--contacts'>
 
           <div class='order-form__tel-wrapper'>
 
-          <p class='order-form__section-title order-form__section-title--tel order-form__section-title--intend'><span class='order-form__section-title-text'>тел</span>
+          <p class='order-form__section-title order-form__section-title--tel'><span class='order-form__section-title-text'>тел</span>
           </p>
 
           <input type='tel' name='tel' class='order-form__tel' required placeholder='+7 XXX XX XX'>
             </div>
             <div class='order-form__email-wrapper'>
-          <p class='order-form__section-title order-form__section-title--email  order-form__section-title--intend'><span class='order-form__section-title-text'>e&nbsp;-&nbsp;mail</span>
+          <p class='order-form__section-title order-form__section-title--email '><span class='order-form__section-title-text'>e&nbsp;-&nbsp;mail</span>
           </p>
           <input type='email' name='email' placeholder='Ваш Email' class='order-form__email' required>
             </div>
 
         </div>
+        </div>
 
-        <div class='order-form__section'>
-          <p class='order-form__section-title order-form__section-title--intend order-form__section-title--detail'><span class='order-form__section-title-text'>Доп</span>
+        <div class='order-form__section order-form__section--details'>
+          <p class='order-form__section-title order-form__section-title--detail'><span class='order-form__section-title-text'>Доп</span>
           </p>
 
           <textarea name='your-wishes' class='order-form__textarea'>Опишите все ваши пожелания к заказу</textarea>
