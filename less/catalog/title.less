@@ -1,6 +1,7 @@
 
 .title {
-    .wrapper();
+    padding: 0 30px;
+    width: 100%;
     background-color: rgb(241, 241, 241);
     padding: 0 30px;
     min-height: 177px;
@@ -12,4 +13,33 @@
     margin: 0;
     text-align: center;
     padding: 70px 10px 70px 10px;
+}
+.title__list {
+    display: none;
+}
+@media (min-width: 768px) {
+    .title {
+        width: 100%;
+        margin: 0 auto;
+        padding: 0 50px;
+        min-height: 215px;
+    }
+    .title__catalog, .title__order {
+        padding:  95px 20px 70px;
+        font-size: 43px;
+        line-height: 50px;
+    }
+}
+    @media (min-width: 1150px) {
+    .title {
+        width: 1150px;
+        padding: 0 50px;
+        margin: 0 auto;
+        min-height: 235px;
+        }
+    .title__catalog, .title__order {
+        font-size: 53px;
+        line-height: 57px;
+        padding: 95px 20px 70px;
+  }
 }

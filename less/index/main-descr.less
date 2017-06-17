@@ -1,4 +1,3 @@
-
 .main-descr__main-img {
     background-image: url(../img/hero-mobile@1x.jpg);
     background-position: 50% 25%;
@@ -12,4 +11,36 @@
     padding: 71px 37px 119px 37px;
     margin: 0;
     min-height: 282px;
+}
+.main-descr__list {
+    display: none;
+}
+@media (min-width: 768px) {
+    .main-descr__main-img {
+        width: 768px;
+        height: 630px;
+        background-size: 160%;
+        background-position: 50% 25%;
+    }
+    .main-descr__title {
+        font-size: 43px;
+        line-height: 50px;
+        padding: 155px 37px 119px 37px;
+    }
+}
+@media (min-width: 1150px) {
+    .main-descr__main-img {
+        width: 1150px;
+        height: 748px;
+        margin: 0 auto;
+        background-size: cover;
+        
+    }
+    .main-descr__title {
+        font-size: 53px;
+        line-height: 57px;
+        padding: 155px 80px 119px 80px
+    }
+ 
+    
 }
