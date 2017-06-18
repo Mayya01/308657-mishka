@@ -151,7 +151,6 @@
 }
 @media (min-width: 1150px) {
     .contacts {
-        position: relative;
         margin-bottom: 100px;
     }
     .contacts__title {
@@ -169,12 +168,14 @@
         margin-top: 90px;
     }
     .contacts__map-row-wrapper {
-       width: 1150px;
+        position: relative;
+        width: 1150px;
         padding: 0 50px;
         display: flex;
         margin: 0 auto;
     }
     .contacts__wrapper {
+        position: relative;
         padding: 0 0 0 175px;
         width: 525px;
     }
@@ -203,10 +204,15 @@
     .contacts__adress--main {
         padding-top: 30px;
     }
-    .contacts__btn {
+  
+    .contacts__wrapper-btn {
         position: absolute;
+        width: 310px;
         bottom: 5px;
-        left: 260px;
+        left: 175px;
+        margin: 0;
+    }
+    .contacts__btn {
         margin: 0;
     }
     
