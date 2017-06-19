@@ -75,7 +75,8 @@
     display: block;
     width: 21px;
     height: 18px;
-    background-image: url(../img/icon-cart.svg);
+    background-image: url(../img/icon-search.svg);
+    background-repeat: no-repeat;
 }
 .main-navigation__item--basket {
     position: relative;
@@ -88,7 +89,7 @@
     display: block;
     width: 18px;
     height: 18px;
-    background-image: url(../img/icon-search.svg);
+    background-image: url(../img/icon-cart.svg);
 }
 .main-navigation__item--delivery {
     display: none;
@@ -133,21 +134,25 @@
     .main-navigation__toggler {
         display: none;
     }
-    .main-navigation__item--search {
-        
-        display: none;
-    }
     .main-navigation__item--basket {
         font-size: 17px;
         line-height: 24px;
         position: relative;
-        padding: 35px 0px 28px 70px;
+        padding: 35px 0px 28px 80px;
     }
-    .main-navigation__item--basket::after {
+    .main-navigation__item--search {
+        font-size: 0;
+        width: 85px;
+        height: 90px;
+        padding: 0;
+        border-left: 1px solid rgb(236,236,236);
+        border-right: 1px solid rgb(236,236,236);
+    }
+    .main-navigation__item--search::before {
         content: '';
         position: absolute;
-        top: 35px;
-        left: -60px;
+        top: 40px;
+        left: 35px;
         display: block;
         width: 18px;
         height: 18px;
@@ -156,8 +161,8 @@
     .main-navigation__item--basket::before {
         content: '';
         position: absolute;
-        top: 35px;
-        left: 20px;
+        top: 40px;
+        left: 30px;
         display: block;
         width: 21px;
         height: 18px;
@@ -197,8 +202,13 @@
         min-height: 90px;
         display: flex;
     }
-    .main-navigation__item--search {
-        display: none;
+    .main-navigation__list .main-navigation__item--search {
+        font-size: 0;
+        width: 85px;
+        height: 90px;
+        padding: 0;
+        border-left: 1px solid rgb(236,236,236);
+        border-right: 1px solid rgb(236,236,236);
     }
     .main-navigation__item {
         font-size: 17px;
@@ -211,10 +221,11 @@
         line-height: 24px;
     }
     .main-navigation__item--catalog {
-        padding: 35px 70px 28px 0px;
+        padding: 35px 40px 28px 0px;
+            border-right: 1px solid rgb(236,236,236);
     }
     .main-navigation__item--order {
-        padding: 35px 55px 28px 0px;
+        padding: 35px 55px 28px 34px;
     }
     .main-navigation__item--new {
         padding: 20px 60px 10px 0;
