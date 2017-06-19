@@ -24,12 +24,15 @@
 .page-header__link-delivery {
     display: none;
 }
+  .page-header__logo--svg {
+        display: none;
+    }
 @media (min-width: 768px) {
 .page-header__wrapper {
     width: 768px;
     padding: 0 50px;
     position: relative;
-    height: 92px;
+    height: 90px;
     }
 .page-header__wrapper::after {
     color: '';
@@ -56,6 +59,10 @@
         margin-top: -60px;
         font-size: 15px;
         line-height: 24px;
+        z-index: 15;
+    }
+    .page-header__logo--svg {
+        display: none;
     }
 }
 @media (min-width: 1150px) {
@@ -74,7 +81,20 @@
         line-height: 24px;
     }
     .page-header__logo img {
-        left: 50%;
+        display: none;
+    }
+    .page-header__logo--svg{
+        display: block;
+        position: absolute;
+        z-index: 10;
+        left: 450px;
+        top: 13px;
+        &:hover {
+            fill:rgb(102,102,102);
+        }
+        &:active {
+            fill:rgb(178,178,178);
+        }
     }
 
 }

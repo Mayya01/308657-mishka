@@ -27,6 +27,12 @@ catalog-item__info-block:active {
     text-decoration: none;
     color: @mainColor;
     display: block;
+    &:hover {
+        color:rgb(141,141,141);
+    }
+    &:active {
+        color:rgb(202,202,202);
+    }
 }
 .catalog-item__descr {
     margin: 0;
@@ -42,14 +48,20 @@ catalog-item__info-block:active {
     margin: 0;
     padding-top: 25px;
 }
-.btn-basket {
+.catalog-item__btn-basket {
     position: absolute;
     bottom: 35px;
     right: 25px;
     display: block;
     width: 21px;
     height: 19px;
-    background-image: url(../img/icon-cart.svg);
+    fill:#d3d2d2;
+    &:hover {
+        fill:rgb(99,209,187);
+    }
+    &:active {
+        fill:rgb(208,241,234);
+    }
 }
 @media (min-width: 768px) {
     .catalog-item__img img{

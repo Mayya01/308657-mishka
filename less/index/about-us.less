@@ -1,7 +1,7 @@
 .about-us__wrapper {
     .wrapper();
     padding: 0 30px;
-    margin-top: 67px;
+    margin-top: 16px;
 }
 .about-us__title {
     font-size: @fontSizeCaptionH3;
@@ -88,11 +88,14 @@
     background-image: url(../img/icon-feature-6.svg);
     background-repeat: no-repeat;
 }
+about-us__item--presents:hover::before {
+    column-fill: red;
+}
 @media (min-width: 768px) {
     .about-us__wrapper {
         width: 768px;
         padding: 0 50px;
-        margin-top: 90px;
+        margin-top: 45px;
     }
     .about-us__title {
         font-size: 43px;

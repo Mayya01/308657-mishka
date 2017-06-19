@@ -35,9 +35,14 @@
     vertical-align: middle;
     width: 27px;
     height: 34px;
-    background-image: url(../img/logo-htmlacademy.svg);
-    background-repeat: no-repeat;
     margin-left: 30px;
+    fill:rgb(99,209,187);
+    &:hover {
+        fill:rgb(70,193,174);
+    }
+    &:active {
+        fill:rgb(189,227,221);
+    }
 }
 .page-footer__logo {
     display: none;
@@ -46,6 +51,12 @@
     .page-footer__logo {
         display: block;
         align-self: center;
+        &:hover {
+            fill:rgb(70,193,174);
+        }
+        &:active {
+            fill:rgb(189,227,221);
+        }
     }
     .page-footer__wrapper {
         width: 768px;

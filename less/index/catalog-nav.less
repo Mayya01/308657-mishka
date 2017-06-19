@@ -31,13 +31,6 @@
 .catalog-nav__link:nth-child(2) {
     background-color: rgb(86, 195, 178);
 }
-.catalog-nav__link:hover {
-    height: 108px;
-    margin-top: -5px;
-}
-.catalog-nav__wrapper:hover {
-    padding-top: 22px;
-}
 .catalog-nav__wrapper {
     width: 320px;
     margin: 0 auto;
@@ -48,12 +41,21 @@
     .catalog-nav {
         margin: 0 auto;
         display: flex;
-        margin-top: -105px;
+        margin-top: -117px;
         width: 768px;
         padding: 0 50px;
     }
     .catalog-nav__link {
+        z-index: 1;
         width: 334px;
+        height: 125px;
+        margin-top: 0px;
+    }
+    .catalog-nav__link:hover {
+        margin-top: -5px;
+    }
+    .catalog-nav__wrapper:hover {
+        padding-top: 22px;
     }
     .catalog-nav__wrapper {
         font-size: 20px;
@@ -70,11 +72,11 @@
     .catalog-nav {
         width: 1150px;
         padding: 0 50px;
-        margin-top: -120px;
+        margin-top: -117px;
     }
     .catalog-nav__link {
         width: 525px;
-        height: 120px;
+        height: 117px;
     }
     .catalog-nav__link:hover {
         height: 125px;
@@ -89,10 +91,9 @@
         margin: 0;
     }
     .catalog-nav__wrapper--interior {
-         background-position: 445px 33px;
+        background-position: 445px 33px;
     }
     .catalog-nav__wrapper--toys {
         background-position: 430px 33px;
     }
 }
-
