@@ -21,8 +21,22 @@
     .title {
         width: 100%;
         margin: 0 auto;
-        padding: 0 50px;
-        min-height: 215px;
+        padding:0;
+        min-height: 225px;
+        position: relative;
+    }
+    .title:after {
+        content: '';
+        position: absolute;
+        bottom: -10px;
+        z-index: 10;
+        background: url(../img/bg-zigzag-fill.svg) no-repeat;
+        background-size: 100% 52px;
+        display: block;
+        height: 34px;
+        width: 100%;
+        background-repeat: repeat-x;
+    
     }
     .title__catalog, .title__order {
         padding:  95px 20px 70px;
@@ -33,9 +47,9 @@
     @media (min-width: 1150px) {
     .title {
         width: 100%;
-        padding: 0 50px;
-        margin: 0 auto;
-        min-height: 235px;
+        padding: 0;
+        margin: 0 auto; 
+        min-height: 255px;
         }
     .title__catalog, .title__order {
         font-size: 53px;
