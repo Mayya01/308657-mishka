@@ -138,15 +138,22 @@
 
 }
 @media (min-width: 1150px) {
-    .popular-item {
-        padding-bottom: 80px;
-        background-size: 800px;
+    .popular-item  {
+        background-image: none;
+        padding-bottom: 0;
     }
+
     .popular-item__wrapper {
+        background-image: url(../img/bg-zigzag-line.svg);
+        background-repeat: repeat-x;
+        background-position-y: bottom;
+        background-size: 800px;
+        background-position-x: 80px;
         width: 1150px;
-        padding: 0 50px;
+        padding: 0 50px 80px 50px;
         margin-top: 65px;
         position: relative;
+
     }
       .popular-item__picture img {
         width: 525px;
