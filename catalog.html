@@ -2,7 +2,7 @@
 <html lang="ru">
 <head>
   <meta charset="utf-8">
-  <meta content="width=device-width" name="viewport">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>HTML Academy: Мишка</title>
   <link href="css/style.min.css" rel="stylesheet">
 </head>
@@ -118,7 +118,7 @@
         <a class='catalog-item__img' href='#'><picture><source media='(min-width:1150px)' srcset='img/photo-1-desktop@1x.jpg 1x, img/photo-1-desktop@2x.jpg 2x'> <source media='(min-width:768px)' srcset='img/photo-1-tablet@1x.jpg 1x, img/photo-1-tablet@2x.jpg 2x'> <img alt='Зайчик-попрыгайчик' height='195' src='img/photo-1-mobile@1x.jpg' srcset='img/photo-1-mobile@2x.jpg 2x' width='260'></picture></a>
         <div class='catalog-item__info-block'>
           <div class='catalog-item__info-wrapper'>
-            <h3 class='catalog-item__title'><a href='#'>Зайчик-попрыгайчик</a></h3>
+            <h2 class='catalog-item__title'><a href='#'>Зайчик-попрыгайчик</a></h2>
             <p class='catalog-item__descr'>Рост 30 см, вес 200 г</p>
           </div>
           <p class='catalog-item__price'>1 200 руб.</p><a class='catalog-item__btn-basket' href='#'><svg height="18.849px" version="1.1" viewbox="264.205 370.961 20.294 18.849" width="20.294px" x="0px" xmlns="http://www.w3.org/2000/svg" y="0px">
@@ -129,7 +129,7 @@
         <a class='catalog-item__img' href='#'><picture><source media='(min-width:1150px)' srcset='img/photo-2-desktop@1x.jpg 1x, img/photo-2-desktop@2x.jpg 2x'> <source media='(min-width:768px)' srcset='img/photo-2-tablet@1x.jpg 1x, img/photo-2-tablet@2x.jpg 2x'><img alt='Корзинка для белья' height='195' src='img/photo-2-mobile@1x.jpg' srcset='img/photo-2-mobile@2x.jpg 2x' width='260'></picture></a>
         <div class='catalog-item__info-block'>
           <div class='catalog-item__info-wrapper'>
-            <h3 class='catalog-item__title'><a href='#'>Корзинка для белья</a></h3>
+            <h2 class='catalog-item__title'><a href='#'>Корзинка для белья</a></h2>
             <p class='catalog-item__descr'>Диаметр 15 см, высота 10 см</p>
           </div>
           <p class='catalog-item__price'>690 руб.</p><a class='catalog-item__btn-basket' href='#'><svg height="18.849px" id="Layer_1" version="1.1" viewbox="264.205 370.961 20.294 18.849" width="20.294px" x="0px" xmlns="http://www.w3.org/2000/svg" y="0px">
@@ -140,7 +140,7 @@
         <a class='catalog-item__img' href='#'><picture><source media='(min-width:1150px)' srcset='img/photo-3-desktop@1x.jpg 1x, img/photo-3-desktop@2x.jpg 2x'> <source media='(min-width:768px)' srcset='img/photo-3-tablet@1x.jpg 1x, img/photo-3-tablet@2x.jpg 2x'><img alt='Большая корзинка для игрушек' height='195' src='img/photo-3-mobile@1x.jpg' srcset='img/photo-3-mobile@2x.jpg 2x' width='260'></picture></a>
         <div class='catalog-item__info-block'>
           <div class='catalog-item__info-wrapper'>
-            <h3 class='catalog-item__title'><a href='#'>Большая&nbsp;корзинка для&nbsp;игрушек</a></h3>
+            <h2 class='catalog-item__title'><a href='#'>Большая&nbsp;корзинка для&nbsp;игрушек</a></h2>
             <p class='catalog-item__descr'>Диаметр 30 см, высота 30 см</p>
           </div>
           <p class='catalog-item__price catalog-item__price--intend'>1 500 руб.</p><a class='catalog-item__btn-basket' href='#'><svg height="18.849px" version="1.1" viewbox="264.205 370.961 20.294 18.849" width="20.294px" x="0px" xmlns="http://www.w3.org/2000/svg" y="0px">
@@ -194,6 +194,21 @@
       </section>
     </div>
   </footer>
+    <div class='modal-overlay modal-overlay--close'></div>
+    <div class='modal-size modal-size--close modal-size--nojs'>
+        <h2 class='modal-size__title'>Добавить в&nbsp;корзину</h2>
+        <p class='modal-size__pick'>Выберите размер:</p>
+        <form class='modal-size__form' action="https://echo.htmlacademy.ru" method="post">
+        <input type='radio' class='modal-size__input' id='small-size'>
+        <label class='modal-size__label' for='small-size'>S</label>
+            
+        <input type='radio' class='modal-size__input' id='medium-size'>
+        <label class='modal-size__label' for='medium-size'>M</label>
+        <input type='radio' class='modal-size__input' id='large-size'>
+        <label class='modal-size__label' for='large-size'>L</label>
+        <button class='modal-size__btn btn'>Добавить</button>
+        </form>
+    </div>
   <script src='js/main.js'></script>
   <script src='js/picturefill.js'></script>
 </body>

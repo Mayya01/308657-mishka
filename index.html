@@ -2,11 +2,12 @@
 <html lang="ru">
 <head>
   <meta charset="utf-8">
-  <meta content="width=device-width" name="viewport">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>HTML Academy: Мишка</title>
   <link href="css/style.min.css" rel="stylesheet">
 </head>
 <body>
+
   <svg style="display:none">
   <symbol id="icon-fb" viewbox="56.519 49.996 14.962 27.718">
     <title>icon-fb</title>
@@ -122,7 +123,7 @@
   <section class='popular-item'>
     <div class='popular-item__wrapper'>
       <div class='popular-item__inner'>
-        <h3 class='popular-item__title'>Вязаные корзинки</h3>
+        <h2 class='popular-item__title'>Вязаные корзинки</h2>
         <p class='popular-item__week'>Товар недели</p>
       </div>
       <div class='popular-item__flex-wrapper'>
@@ -154,7 +155,7 @@
   </section>
   <section class='about-us'>
     <div class='about-us__wrapper'>
-      <h3 class='about-us__title'>Коротко о нас:</h3>
+      <h2 class='about-us__title'>Коротко о нас:</h2>
       <ul class='about-us__list'>
         <li class='about-us__item about-us__item--flower'>Экологически чистые&nbsp;материалы</li>
         <li class='about-us__item about-us__item--money'>Скандинавский&nbsp;стиль по&nbsp;российской цене</li>
@@ -183,7 +184,7 @@
   <section class='contacts'>
     <div class='contacts__map-row-wrapper'>
       <div class='contacts__wrapper'>
-        <h3 class='contacts__title'>Контакты</h3>
+        <h2 class='contacts__title'>Контакты</h2>
         <div class='contacts__row-wrapper'>
           <div class='contacts__row'>
             <p class='contacts__text contacts__text--email'>e&ndash;mail:</p><a class='contacts__adress contacts__adress--link' href='mailto:info@mimimishkashop.ru'>info@mimimishkashop.ru</a>
@@ -232,6 +233,21 @@
       </section>
     </div>
   </footer>
+    <div class='modal-overlay modal-overlay--close'></div>
+    <div class='modal-size modal-size--close modal-size--nojs'>
+        <h2 class='modal-size__title'>Добавить в&nbsp;корзину</h2>
+        <p class='modal-size__pick'>Выберите размер:</p>
+        <form class='modal-size__form' action="https://echo.htmlacademy.ru" method="post">
+        <input type='radio' class='modal-size__input' id='small-size'>
+        <label class='modal-size__label' for='small-size'>S</label>
+            
+        <input type='radio' class='modal-size__input' id='medium-size'>
+        <label class='modal-size__label' for='medium-size'>M</label>
+        <input type='radio' class='modal-size__input' id='large-size'>
+        <label class='modal-size__label' for='large-size'>L</label>
+        <button class='modal-size__btn btn'>Добавить</button>
+        </form>
+    </div>
   <script src='js/main.js'></script>
   <script src='js/picturefill.js'></script>
 </body>
