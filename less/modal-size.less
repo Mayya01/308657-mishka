@@ -10,12 +10,12 @@
 .modal-size {
     position: fixed;
     padding: 0 30px;
-    top: 40%;
+    top: 50%;
     left: 50%;
+    transform: translate(-50%,-50%);
     background-color: rgb(255,255,255);
     min-height: 338px;
     width: 320px;
-    margin-left: -170px;
     box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.25);
     z-index: 20;
 }
@@ -39,7 +39,7 @@
     margin: 0;
     text-align: center;
     margin-bottom: 25px;
-    
+
 }
 .modal-size__label {
     font-size: 17px;
@@ -83,7 +83,6 @@
     .modal-size {
         width: 570px;
         min-height: 337px;
-        left: 40%;
         border: 1px solid rgb(198,198,198);
         padding: 0 107px;
     }
@@ -110,10 +109,6 @@
     margin: 0 2px;
 }
 }
-@media (min-width: 1150px) {
-    .modal-size {
-        left: 44%;
-    }
-}
+
 
 
