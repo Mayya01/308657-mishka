@@ -1,10 +1,11 @@
-var productionBtn=document.querySelector('.production__order-btn');
+var catalogBasket=document.querySelectorAll('.catalog-item__btn-basket');
 var modal = document.querySelector('.modal-size');
 var moduleBtn = document.querySelector('.modal-size__btn');
 var modalOverlay=document.querySelector('.modal-overlay');
 modal.classList.remove('modal-size--nojs');
 
-productionBtn.addEventListener('click', function(evt){
+for(var i=0; i<catalogBasket.length; i++) {
+  catalogBasket[i].addEventListener('click', function(evt){
   evt.preventDefault();
   if(modal.classList.contains('modal-size--close') && modalOverlay.classList.contains('modal-overlay--close')) {
         modal.classList.remove('modal-size--close');
@@ -21,6 +22,7 @@ productionBtn.addEventListener('click', function(evt){
     }
 
 });
+}
 moduleBtn.addEventListener('click', function(evt) {
       evt.preventDefault();
       modal.classList.remove('modal-size--open');
