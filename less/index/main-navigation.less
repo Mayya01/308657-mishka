@@ -1,34 +1,4 @@
-/*.main-navigation__toggler--open {
-  position: absolute;
-  top: 35px;
-  transform: translateX(270px);
-  font-size: 0;
-  width: 20px;
-  height: 14px;
-  background-repeat: no-repeat;
-  border: none;
-  background-color: rgb(255, 255, 255);
-  background-image: url(../img/icon-menu-open.svg);
-  cursor: pointer;
-}
-.main-navigation__toggler--close {
-  position: absolute;
-  top: 35px;
-  transform: translateX(270px);
-  font-size: 0;
-  width: 21px;
-  height: 20px;
-  background-repeat: no-repeat;
-  border: none;
-  background-color: rgb(255, 255, 255);
-  background-image: url(../img/icon-menu-close.svg);
-  cursor: pointer;
-}*/
-.main-navigation {
-  display: flex;
-  flex-direction: column;
-  position: absolute;
-}
+
 .main-navigation__list {
   width: 320px;
   margin: 0;
@@ -57,11 +27,7 @@
 .main-navigation__item a:active {
   color: rgb(202, 202, 202);
 }
-/*.main-navigation--nojs.main-navigation--closed {
-  .main-navigation__toggler {
-    display: none;
-  }
-}*/
+
 .main-navigation__item--search {
   position: relative;
 }
@@ -100,12 +66,27 @@
 .main-navigation__item--new, .main-navigation__item--sale {
   display: none;
 }
+
+.main-navigation {
+  display: flex;
+  flex-direction: column;
+}
 @media (max-width: 767px) {
-  .main-navigation--closed .main-navigation__list {
-    display: block;
+   .main-navigation--closed .main-navigation__list {
+    display: none;
   }
   .main-navigation--opened .main-navigation__list {
-    display: none;
+    display: block;
+  }
+  .main-navigation--opened .main-navigation__wrapper {
+    position: absolute;
+    z-index: 10;
+  }
+  .main-navigation--nojs .main-navigation__wrapper {
+    position: static;
+  }
+  .main-navigation--nojs .main-navigation__list {
+    display: block;
   }
 }
 @media (min-width: 768px) {
@@ -116,6 +97,11 @@
   }
   .main-navigation {
     position: static;
+    display: block;
+  }
+  .main-navigation__wrapper {
+    display: flex;
+    flex-direction: column;
   }
   .main-navigation__list:nth-of-type(1) {
     order: 2;
@@ -159,7 +145,7 @@
   }
 }
 @media (min-width: 1150px) {
-  .main-navigation {
+  .main-navigation__wrapper {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;

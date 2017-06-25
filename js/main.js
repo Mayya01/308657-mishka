@@ -4,15 +4,15 @@ var navToggler = document.querySelector('.navigation-toggler');
 
 mainNav.classList.remove('main-navigation--nojs');
 navToggler.addEventListener('click', function() {
-  if (mainNav.classList.contains('main-navigation--opened')) {
-    mainNav.classList.remove('main-navigation--opened');
+  if (mainNav.classList.contains('main-navigation--closed')) {
+    mainNav.classList.remove('main-navigation--closed');
     navToggler.classList.remove('navigation-toggler--open');
     navToggler.classList.add('navigation-toggler--close');
-    mainNav.classList.add('main-navigation--closed');
+    mainNav.classList.add('main-navigation--opened');
   } else {
-    mainNav.classList.remove('main-navigation--closed');
+    mainNav.classList.remove('main-navigation--opened');
     navToggler.classList.remove('navigation-toggler--close');
     navToggler.classList.add('navigation-toggler--open');
-    mainNav.classList.add('main-navigation--opened');
+    mainNav.classList.add('main-navigation--closed');
   }
 });
