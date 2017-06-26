@@ -1,0 +1,36 @@
+.navigation-toggler--open {
+  position: absolute;
+  top: 35px;
+  transform: translateX(270px);
+  font-size: 0;
+  width: 20px;
+  height: 14px;
+  background-repeat: no-repeat;
+  border: none;
+  background-color: rgb(255, 255, 255);
+  background-image: url(../img/icon-menu-open.svg);
+  cursor: pointer;
+}
+.navigation-toggler--close {
+  position: absolute;
+  top: 35px;
+  transform: translateX(270px);
+  font-size: 0;
+  width: 21px;
+  height: 20px;
+  background-repeat: no-repeat;
+  border: none;
+  background-color: rgb(255, 255, 255);
+  background-image: url(../img/icon-menu-close.svg);
+  cursor: pointer;
+}
+.navigation-toggler--nojs {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .navigation-toggler {
+    display: none;
+  }
+}
+
