@@ -258,18 +258,19 @@
     font-size: 19px;
     line-height: 18px;
   }
-  .order-form__text, .order-form__tel, .order-form__email, .order-form__textarea {
+  .order-form__text,
+  .order-form__tel,
+  .order-form__email,
+  .order-form__textarea {
     font-size: 19px;
     line-height: 18px;
     font-family: 'Open Sans', 'Source Sans Pro', sans-serif;
   }
   .order-form__section-title {
-    margin: 0;
-  }
-  .order-form__section-title {
     padding: 0;
     display: inline-block;
     text-align: left;
+    margin: 0;
   }
   .order-form__section-title--detail {
     padding: 17px 0px 10px 0;
@@ -297,15 +298,17 @@
     width: 768px;
     margin: 0 auto;
   }
-  .order-form__section--color {
-    min-height: 305px;
-    padding-top: 65px;
-    margin-bottom: 0;
-  }
   .order-form__color .order-form__section--color {
     width: 768px;
     margin: 0 auto;
+    padding-top: 50px;
+    min-height: 0;
+    padding-bottom: 25px;
+}
+  .order-form__section--color .order-form__section-title {
+    padding-top: 15px;
   }
+
   .order-form__color {
     width: 100%;
     background-color: rgb(241, 241, 241);
@@ -331,12 +334,12 @@
     flex-wrap: wrap;
   }
   .order-form__checkbox-label {
-    padding-left: 80px;
     width: 238px;
     height: 22px;
-    margin-bottom: 10px;
+    margin-bottom: 24px;
     margin-top: 0;
-    min-height: 20px;
+    padding: 14px 10px 15px 80px;
+    height: 52px;
   }
   .order-form__checkbox-label:nth-of-type(odd) {
     margin-right: 25px;
@@ -347,12 +350,14 @@
   .order-form__checkbox-label::before {
     width: 54px;
     height: 52px;
-    left: 2px;
-    top: -20px;
+    left: 0;
+    top: 0;
   }
   .order-form__checkbox:checked+.order-form__checkbox-label::after {
     width: 33px;
     height: 22px;
+    top: 12px;
+    left: 10px;
   }
   .order-form__text-wrapper {
     padding: 0;
@@ -468,7 +473,7 @@
     line-height: 18px;
     font-family: 'Open Sans', 'Source Sans Pro', sans-serif;
   }
-  .order-form__section, .order-form__section--color, {
+  .order-form__section {
     min-height: 230px;
     padding-top: 70px;
     margin-top: 0;
@@ -493,6 +498,9 @@
   .order-form__color .order-form__section--color {
     width: 1150px;
     margin: 0 auto;
+    padding-top: 50px;
+    min-height: 0;
+    padding-bottom: 20px;
   }
   .order-form__section--details {
     width: 1150px;
@@ -501,6 +509,9 @@
   .order-form__section-title {
     padding: 0px 10px 10px 60px;
     margin-right: 0;
+  }
+  .order-form__section--color .order-form__section-title {
+    padding: 16px 10px 10px 60px;
   }
   .order-form__section--name .order-form__section-title {
     padding: 15px 10px 10px 60px;
@@ -512,11 +523,27 @@
   .order-form__checkbox-label {
     width: 250px;
     padding-right: 0;
+    width: 250px;
+    margin-bottom: 24px;
+    padding: 16px 0 10px 80px;
+    height: 56px;
+    line-height: 22px;
   }
-  .order-form__checkbox-label:nth-of-type(-n+2), .order-form__checkbox-label:nth-of-type(n+4) {
+  .order-form__checkbox-label::before {
+    top: 0;
+    left: 0;
+  }
+  .order-form__checkbox:checked+.order-form__checkbox-label::after {
+    top: 15px;
+    left: 10px;
+  }
+  .order-form__checkbox-label:nth-of-type(-n+2),
+    .order-form__checkbox-label:nth-of-type(n+4) {
     margin-right: 13px;
   }
-  .order-form__text--surname, .order-form__text--patronymic {
+  .order-form__section--color
+  .order-form__text--surname,
+  .order-form__text--patronymic {
     width: 575px;
   }
   .order-form__text--name {

@@ -102,7 +102,7 @@
           </g>
         </svg>
       </div>
-      <button class='navigation-toggler navigation-toggler--open'
+      <button class='navigation-toggler navigation-toggler--open navigation-toggler--nojs'
       type='button'>
         <span></span>
       </button>
@@ -118,9 +118,7 @@
           </ul>
           <ul class='main-navigation__list'>
             <li class='main-navigation__item main-navigation__item--search'>
-              <svg class='main-navigation__search' height="17.6px"
-              id="Layer_1" version="1.1"
-              viewbox="-0.8 -0.8 17.6 17.6"
+              <svg class='main-navigation__search' height="17.6px" id="Layer_1" version="1.1" viewbox="-0.8 -0.8 17.6 17.6"
               width="17.6px" x="0px" xmlns="http://www.w3.org/2000/svg"
               y="0px">
                 <path d="M16.47,14.93l-3.415-3.415C14.02,10.226,14.6,8.634,14.6,6.899c0-4.253-3.447-7.699-7.7-7.699 S-0.8,2.646-0.8,6.899s3.446,7.7,7.699,7.7c1.734,0,3.326-0.58,4.613-1.546l3.417,3.416c0.203,0.202,0.418,0.33,0.771,0.33 c0.607,0,1.1-0.492,1.1-1.1C16.8,15.459,16.739,15.2,16.47,14.93z M1.399,6.899c0-3.038,2.462-5.5,5.5-5.5s5.5,2.462,5.5,5.5 s-2.462,5.5-5.5,5.5S1.399,9.938,1.399,6.899z"></path>
@@ -188,17 +186,14 @@
           </table>
           <div class='popular-item__btn-price'>
             <p class='popular-item__price'>Цена: 990 руб.</p>
-            <a class='popular-item__btn  btn' href='#'>Заказать</a>
+            <a class='popular-item__btn  btn' href='pick-size.html'>Заказать</a>
           </div>
         </div>
         <div class='popular-item__picture'>
           <picture>
             <source media='(min-width:1150px)' srcset='img/triple-set-desktop@1x.jpg 1x, img/triple-set-desktop@2x.jpg 2x'>
-              <source media='(min-width:768px)' srcset='img/triple-set-tablet@1x.jpg 1x, img/triple-set-tablet@2x.jpg 2x'>
-                <img alt='Вязаные корзинки' height="315"
-                src="img/triple-set-mobile@1x.jpg"
-                srcset='img/triple-set-mobile@2x.jpg 2x'
-                width="260">
+            <source media='(min-width:768px)' srcset='img/triple-set-tablet@1x.jpg 1x, img/triple-set-tablet@2x.jpg 2x'>
+            <img alt='Вязаные корзинки' height="315" src="img/triple-set-mobile@1x.jpg" srcset='img/triple-set-mobile@2x.jpg 2x' width="260">
           </picture>
         </div>
       </div>
@@ -249,7 +244,7 @@
           </svg>
           Следующий отзыв</button>
       </div>
-      <a class='btn reviews__btn' href='#review_form'>Написать</a>
+      <a class='btn reviews__btn' href='review-form.html'>Написать</a>
     </div>
   </section>
   <section class='contacts'>
@@ -276,7 +271,7 @@
         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.5991043651647!2d30.320894616405283!3d59.93879418187615!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xfbeb3cbd3eed50c8!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCAxMDEsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1495810554958"></iframe>
       </div>
       <div class='contacts__wrapper-btn'>
-        <a class='btn contacts__btn' href='#contacts_form'>Напишите нам</a>
+        <a class='btn contacts__btn' href='contacts-form.html'>Напишите нам</a>
       </div>
     </div>
   </section>
@@ -332,20 +327,19 @@
     <form class='modal-size__form' action="https://echo.htmlacademy.ru"
     method="post">
       <input type='radio' class='modal-size__input'
-      id='small-size'>
+      id='small-size' name='madal'>
       <label class='modal-size__label' for='small-size'>S</label>
 
       <input type='radio' class='modal-size__input'
-      id='medium-size'>
+      id='medium-size' name='madal'>
       <label class='modal-size__label' for='medium-size'>M</label>
       <input type='radio' class='modal-size__input'
-      id='large-size'>
+      id='large-size' name='madal'>
       <label class='modal-size__label' for='large-size'>L</label>
       <button class='modal-size__btn btn'>Добавить</button>
     </form>
   </div>
   <script src='js/main.js'></script>
-  <script src='js/modal-index.js'></script>
   <script src='js/picturefill.js'></script>
 </body>
 
